@@ -1,0 +1,1078 @@
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  .section-title {
+    padding-left: 70px;
+    font-size: 42px; }
+    .section-title::before {
+      width: 45px;
+      top: 23px; }
+  header.page-header.page-header-image .header-content .section-title {
+    margin-left: -70px; }
+  section.section-second ul {
+    padding-left: 20px; }
+    section.section-second ul.items-in-line li {
+      width: 50%;
+      margin-bottom: 52px;
+      padding: 0 50px; }
+      section.section-second ul.items-in-line li:nth-child(3n) {
+        clear: both; }
+      section.section-second ul.items-in-line li:nth-last-child(1), section.section-second ul.items-in-line li:nth-last-child(2) {
+        margin-bottom: 0; }
+  section.section-video .progress-items {
+    padding-right: 20px; }
+  section.section-achievements {
+    padding: 140px 0 30px; }
+  footer.page-footer .footer-column {
+    margin-bottom: 40px; }
+  footer.page-footer.page-footer-first .footer-column:nth-child(3n) {
+    clear: both; }
+  footer.page-footer .copyright {
+    margin-top: 20px; }
+  footer.page-footer.page-footer-second p, footer.page-footer.page-footer-third p, footer.page-footer.page-footer-fourth p {
+    max-width: none; }
+  section.section-our-process .process-item {
+    margin-bottom: 40px; }
+    section.section-our-process .process-item:nth-child(3n) {
+      clear: both; }
+  section.section-team .slide .img-bg {
+    height: 340px;
+    padding: 35px; }
+  section.section-work .work-slider .slider-nav {
+    top: 360px; }
+  section.section-work .work-slider .slide .img {
+    height: 360px; }
+  section.section-work .video-item, section.section-work .audio-item {
+    height: 300px; }
+  .wrapper-benjamin section.section-who-we-are-second .text {
+    padding-top: 20px; }
+  .wrapper-benjamin section.section-services-second .services-item {
+    width: 100%;
+    min-height: 170px; }
+  .wrapper-benjamin section.section-map ul {
+    padding-left: 25px; }
+  .wrapper-ortego section.section-popular-posts .post-item .post-info > div a,
+  .wrapper-ortego section.section-new-posts .post-item .post-info > div a {
+    padding-left: 28px; }
+  .wrapper-ortego section.section-popular-posts .post-item .post-info > div .right,
+  .wrapper-ortego section.section-new-posts .post-item .post-info > div .right {
+    margin-left: 20px; }
+    .wrapper-ortego section.section-popular-posts .post-item .post-info > div .right a,
+    .wrapper-ortego section.section-new-posts .post-item .post-info > div .right a {
+      margin-right: 20px; }
+  .wrapper-ortego section.section-latest-posts .video-item.item-large, .wrapper-ortego section.section-latest-posts a.item-large {
+    height: 370px; }
+  .wrapper-ortego section.section-latest-posts .video-item.item-middle, .wrapper-ortego section.section-latest-posts a.item-middle {
+    height: 220px; }
+  .wrapper-ortego section.section-latest-posts .video-item.item-small, .wrapper-ortego section.section-latest-posts a.item-small {
+    height: 170px; }
+  .wrapper-ortego header.page-header.user-profile .header-navigation {
+    padding-left: 160px; }
+    .wrapper-ortego header.page-header.user-profile .header-navigation a.logo {
+      max-width: 160px; }
+    .wrapper-ortego header.page-header.user-profile .header-navigation nav a {
+      padding: 0 10px; }
+    .wrapper-ortego header.page-header.user-profile .header-navigation .options a:not(.me) {
+      padding: 0 20px;
+      width: 60px; }
+  .wrapper-ortego header.page-header.user-profile .header-content .user-info {
+    max-width: 380px; }
+    .wrapper-ortego header.page-header.user-profile .header-content .user-info p, .wrapper-ortego header.page-header.user-profile .header-content .user-info textarea {
+      width: 340px;
+      height: 72px; }
+  .wrapper-ortego section.section-profile .profile-content nav a {
+    margin: 0 15px; }
+  .wrapper-ortego section.section-profile .profile-sidebar a.button:not(.edit) {
+    max-width: 142px; }
+  .wrapper-ortego section.section-profile .profile-sidebar .sidebar-row .sidebar-item.last-photos .img {
+    width: 68px;
+    height: 68px; }
+  .wrapper-ortego section.section-profile .profile-sidebar .sidebar-row .sidebar-item.last-videos .video-item {
+    width: 108px; }
+  .wrapper-ortego section.section-profile .profile-content .profile-member .member-name, .wrapper-ortego section.section-profile .profile-content .profile-member .member-address {
+    max-width: 180px; }
+  .wrapper-ortego section.section-profile .profile-content .photos-gallery .item-long {
+    height: 220px; }
+  .wrapper-ortego section.section-profile .profile-content .photos-gallery .item-short {
+    height: 160px; }
+  .wrapper-ortego section.section-profile .profile-content .photos-gallery .item-very-short {
+    height: 110px; }
+  .wrapper-ortego section.section-profile .profile-content table tr.gender .checkbox {
+    display: block; }
+    .wrapper-ortego section.section-profile .profile-content table tr.gender .checkbox:first-child {
+      margin-bottom: 10px; }
+  .wrapper-ortego section.section-profile .profile-content table tr.martial-status .checkbox {
+    display: block;
+    max-width: 50%;
+    width: 100%; }
+    .wrapper-ortego section.section-profile .profile-content table tr.martial-status .checkbox:nth-child(1), .wrapper-ortego section.section-profile .profile-content table tr.martial-status .checkbox:nth-child(2) {
+      margin-bottom: 10px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) {
+  .section-title {
+    font-size: 38px;
+    padding-left: 55px; }
+    .section-title::before {
+      width: 35px;
+      top: 20px; }
+  header.page-header {
+    background-position: center 50px; }
+    header.page-header:not(.second-page-header) .header-content {
+      margin-top: 25px; }
+    header.page-header:not(.second-page-header) .header-bottom-content .text-slider {
+      max-width: none; }
+    header.page-header .header-navigation {
+      height: 50px; }
+      header.page-header .header-navigation .submenu {
+        display: none; }
+      header.page-header .header-navigation nav a:not(.search) {
+        display: none; }
+      header.page-header .header-navigation nav a.search {
+        height: 50px; }
+      header.page-header .header-navigation a.logo {
+        height: 50px;
+        line-height: 50px; }
+        header.page-header .header-navigation a.logo img {
+          max-height: 30px;
+          max-width: 120px; }
+      header.page-header .header-navigation a.menu-open {
+        display: inline-block; }
+      header.page-header .header-navigation.header-navigation-second nav a.search {
+        background-position: 0 center; }
+      header.page-header .header-navigation.header-navigation-third a.menu-open {
+        height: 50px; }
+      header.page-header .header-navigation.header-navigation-fourth a.menu-open {
+        height: 50px; }
+      header.page-header .header-navigation.header-navigation-fifth {
+        height: 100px; }
+    header.page-header.page-header-image .header-content .section-title {
+      margin-left: -55px; }
+    header.page-header .header-search {
+      height: 50px; }
+      header.page-header .header-search form input {
+        margin-top: 5px; }
+  section.section-second .picture {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0 !important; }
+  section.section-second .list-items {
+    padding-top: 80px;
+    padding-bottom: 70px; }
+  section.section-second ul.items-in-line li {
+    margin-bottom: 52px;
+    padding: 0 25px; }
+  section.section-who-we-are .picture {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0 !important; }
+  section.section-video .video-item {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0 !important; }
+  section.section-video .progress-items ul {
+    max-width: none;
+    float: none;
+    margin: 70px 0 80px;
+    padding: 0 20px; }
+  section.section-our-services ul li:nth-child(2n) {
+    padding-left: 73px; }
+  section.section-portfolio .section-header {
+    padding-top: 60px; }
+  section.section-portfolio .section-navigation {
+    float: none;
+    width: 100%;
+    text-align: center; }
+    section.section-portfolio .section-navigation li:last-child a {
+      padding-right: 20px; }
+  section.section-portfolio .content.fluid-4 a.portfolio-item {
+    padding-top: 30%;
+    width: 50%;
+    background-color: #a8a8a8; }
+    section.section-portfolio .content.fluid-4 a.portfolio-item span.icon {
+      width: 70px;
+      height: 70px;
+      margin-bottom: 5px; }
+    section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(2), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(3), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(6), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(7), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(10), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(11) {
+      background-color: #bfbfbf; }
+  section.section-portfolio .content.fluid-3 a.portfolio-item, section.section-portfolio .content.grid-3 a.portfolio-item {
+    background-color: #a8a8a8; }
+    section.section-portfolio .content.fluid-3 a.portfolio-item span.icon, section.section-portfolio .content.grid-3 a.portfolio-item span.icon {
+      width: 55px;
+      height: 55px; }
+    section.section-portfolio .content.fluid-3 a.portfolio-item:nth-child(2n), section.section-portfolio .content.grid-3 a.portfolio-item:nth-child(2n) {
+      background-color: #bfbfbf; }
+  section.section-images .img {
+    width: 50%;
+    padding-top: 30%; }
+  section.section-achievements {
+    padding: 100px 0 0; }
+  section.section-posts .posts-item,
+  section.section-blog .posts-item {
+    width: 50%; }
+  section.section-our-process .content-button {
+    margin-top: 10px; }
+  section.section-brands .brand-item:nth-child(3n) {
+    clear: both; }
+  section.section-work .work-left {
+    margin-bottom: 30px; }
+  article .post-img {
+    margin-bottom: 35px; }
+  section.section-contact ul {
+    margin: 0 0 50px; }
+  .wrapper-benjamin header.page-header .header-navigation.header-navigation-seventh nav a, .wrapper-benjamin header.page-header .header-navigation.header-navigation-eighth nav a, .wrapper-benjamin header.page-header .header-navigation.header-navigation-ninth nav a {
+    line-height: 50px; }
+  .wrapper-benjamin header.page-header .header-navigation.header-navigation-seventh a.menu-open, .wrapper-benjamin header.page-header .header-navigation.header-navigation-eighth a.menu-open, .wrapper-benjamin header.page-header .header-navigation.header-navigation-ninth a.menu-open {
+    height: 50px; }
+  .wrapper-benjamin section.section-our-services .item {
+    margin-left: 25px; }
+  .wrapper-benjamin section.section-about-us .choose {
+    margin-bottom: 70px; }
+  .wrapper-benjamin section.section-about-us .skills {
+    padding-left: 15px; }
+  .wrapper-benjamin section.section-help .achievement:nth-child(2n)::after {
+    display: none; }
+  .wrapper-benjamin section.section-brands .brand-item {
+    width: 50%; }
+  .wrapper-benjamin section.section-form form {
+    margin-top: 70px; }
+  .wrapper-benjamin section.section-who-we-are-second {
+    padding: 60px 0; }
+    .wrapper-benjamin section.section-who-we-are-second .item {
+      margin-bottom: 60px; }
+      .wrapper-benjamin section.section-who-we-are-second .item:last-child .text {
+        margin: 40px 0 0; }
+    .wrapper-benjamin section.section-who-we-are-second .text {
+      margin-bottom: 40px; }
+  .wrapper-benjamin section.section-team .employee {
+    width: 33.33333%; }
+  .wrapper-benjamin section.section-services .services-item {
+    width: 50%; }
+    .wrapper-benjamin section.section-services .services-item:nth-child(3n + 1) {
+      clear: none; }
+      .wrapper-benjamin section.section-services .services-item:nth-child(3n + 1):nth-child(2n + 1) {
+        clear: both; }
+  .wrapper-benjamin section.section-services-second .services-item {
+    width: 100%; }
+  .wrapper-benjamin section.section-service .section-sidebar {
+    padding-right: 0; }
+  .wrapper-benjamin section.section-portfolio .content.grid-4 a.portfolio-item span.title {
+    font-size: 12px;
+    padding: 12px; }
+  .wrapper-benjamin section.section-blog .section-sidebar,
+  .wrapper-benjamin article .section-sidebar {
+    padding: 0; }
+  .wrapper-ortego header.page-header .header-navigation {
+    height: 100px; }
+  .wrapper-ortego header.page-header a.logo {
+    height: 100px;
+    line-height: 100px; }
+    .wrapper-ortego header.page-header a.logo img {
+      max-width: 130px;
+      max-height: none; }
+  .wrapper-ortego header.page-header.third-page-header {
+    min-height: 100vh;
+    height: auto; }
+    .wrapper-ortego header.page-header.third-page-header .header-content {
+      position: static;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      padding: 60px 15px 160px; }
+      .wrapper-ortego header.page-header.third-page-header .header-content .section-title {
+        margin-bottom: 30px; }
+      .wrapper-ortego header.page-header.third-page-header .header-content .text {
+        margin-bottom: 50px; }
+  .wrapper-ortego section.section-second ul.items {
+    float: none;
+    margin: 60px auto; }
+  .wrapper-ortego section.section-second .mockup-parent {
+    height: auto !important; }
+  .wrapper-ortego section.section-second .mockup {
+    left: 15px;
+    width: 100%;
+    height: 100%;
+    position: static; }
+    .wrapper-ortego section.section-second .mockup img {
+      max-width: 100%; }
+  .wrapper-ortego section.section-ortego {
+    height: auto; }
+    .wrapper-ortego section.section-ortego .text .text-content {
+      padding: 60px 0 60px;
+      position: static;
+      -webkit-transform: none;
+          -ms-transform: none;
+              transform: none;
+      margin: auto; }
+      .wrapper-ortego section.section-ortego .text .text-content .section-title {
+        text-align: center; }
+    .wrapper-ortego section.section-ortego .picture {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0 !important; }
+      .wrapper-ortego section.section-ortego .picture.picture-mobile {
+        display: block; }
+      .wrapper-ortego section.section-ortego .picture.picture-desktop {
+        display: none; }
+  .wrapper-ortego section.section-popular-posts .post-item,
+  .wrapper-ortego section.section-new-posts .post-item {
+    width: 50%; }
+  .wrapper-ortego section.section-latest-posts .video-item.item-large, .wrapper-ortego section.section-latest-posts a.item-large {
+    height: 320px; }
+  .wrapper-ortego section.section-latest-posts .video-item.item-middle, .wrapper-ortego section.section-latest-posts a.item-middle {
+    height: 220px; }
+  .wrapper-ortego section.section-latest-posts .video-item.item-small, .wrapper-ortego section.section-latest-posts a.item-small {
+    height: 170px; }
+  .wrapper-ortego header.page-header.user-profile .header-navigation {
+    height: 50px;
+    padding-left: 0;
+    line-height: 50px; }
+    .wrapper-ortego header.page-header.user-profile .header-navigation a.logo {
+      display: none; }
+    .wrapper-ortego header.page-header.user-profile .header-navigation nav a {
+      padding: 0 10px; }
+    .wrapper-ortego header.page-header.user-profile .header-navigation .options {
+      float: none;
+      width: 100%; }
+      .wrapper-ortego header.page-header.user-profile .header-navigation .options a:not(.me) {
+        padding: 0 20px;
+        width: 60px; }
+      .wrapper-ortego header.page-header.user-profile .header-navigation .options a {
+        height: 50px;
+        line-height: 50px; }
+        .wrapper-ortego header.page-header.user-profile .header-navigation .options a .avatar {
+          width: 40px;
+          height: 40px;
+          margin: -3px 10px 0 0; }
+      .wrapper-ortego header.page-header.user-profile .header-navigation .options a.menu-open {
+        display: block; }
+  .wrapper-ortego header.page-header.user-profile .header-content {
+    padding-bottom: 50px; }
+    .wrapper-ortego header.page-header.user-profile .header-content .user-info, .wrapper-ortego header.page-header.user-profile .header-content .follow {
+      float: none;
+      display: block;
+      max-width: none; }
+    .wrapper-ortego header.page-header.user-profile .header-content .follow {
+      margin-top: 30px; }
+  .wrapper-ortego section.section-profile .profile-sidebar a.button:not(.edit) {
+    max-width: 180px;
+    float: none;
+    margin-right: 10px; }
+    .wrapper-ortego section.section-profile .profile-sidebar a.button:not(.edit):nth-child(2) {
+      margin-right: 0;
+      float: none; }
+  .wrapper-ortego section.section-profile .profile-sidebar .sidebar-row .sidebar-item.last-photos .img:nth-child(2n) {
+    margin-right: 10px; }
+  .wrapper-ortego section.section-profile .profile-sidebar .sidebar-row .sidebar-item.last-photos .img:nth-child(3n) {
+    margin-right: 10px; }
+  .wrapper-ortego section.section-profile .profile-sidebar .sidebar-row .sidebar-item.last-videos .video-item {
+    margin-right: 10px; }
+    .wrapper-ortego section.section-profile .profile-sidebar .sidebar-row .sidebar-item.last-videos .video-item:nth-child(2n) {
+      margin-right: 10px; }
+  .wrapper-ortego section.section-profile .profile-content .profile-member .member-name, .wrapper-ortego section.section-profile .profile-content .profile-member .member-address {
+    max-width: 280px; }
+  .wrapper-ortego section.section-messages .messages-window {
+    overflow: hidden; }
+    .wrapper-ortego section.section-messages .messages-window .list-members {
+      position: absolute;
+      top: 0;
+      left: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+              transform: translate3d(-100%, 0, 0);
+      -webkit-transition: -webkit-transform .25s;
+      transition: -webkit-transform .25s;
+      -o-transition: transform .25s;
+      transition: transform .25s;
+      transition: transform .25s, -webkit-transform .25s;
+      border-right: 0; }
+      .wrapper-ortego section.section-messages .messages-window .list-members.is-open {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none; }
+    .wrapper-ortego section.section-messages .messages-window .chat-member {
+      margin-left: 0;
+      position: relative; }
+      .wrapper-ortego section.section-messages .messages-window .chat-member a.list-of-members {
+        display: block; }
+      .wrapper-ortego section.section-messages .messages-window .chat-member .chat-title {
+        padding-left: 60px; } }
+
+@media only screen and (min-width: 992px) {
+  .wrapper-ortego section.section-messages .messages-window .chat-member .background-overlay {
+    display: none !important; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .section-title {
+    font-size: 30px;
+    text-align: center;
+    padding-left: 0; }
+    .section-title::before {
+      display: none; }
+  header.page-header {
+    padding: 0 0 60px; }
+    header.page-header:not(.second-page-header) {
+      height: auto;
+      min-height: auto; }
+      header.page-header:not(.second-page-header) .header-content,
+      header.page-header:not(.second-page-header) .header-bottom-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        bottom: auto;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        margin-top: 60px; }
+    header.page-header.page-header-image .header-content {
+      margin-top: 100px; }
+      header.page-header.page-header-image .header-content a::after {
+        display: none; }
+      header.page-header.page-header-image .header-content .section-title {
+        text-align: left;
+        margin: 0; }
+    header.page-header.page-header-slider .header-slider .owl-carousel {
+      padding: 0 30px; }
+    header.page-header.page-header-slider .header-slider .header-slider-nav div {
+      width: 25px;
+      height: 25px;
+      background-image: url("../img/arrow.png"); }
+    header.page-header .header-navigation.header-navigation-fifth {
+      height: auto; }
+      header.page-header .header-navigation.header-navigation-fifth .header-info {
+        height: auto;
+        text-align: center;
+        padding: 10px 15px; }
+        header.page-header .header-navigation.header-navigation-fifth .header-info .container > div {
+          display: block; }
+        header.page-header .header-navigation.header-navigation-fifth .header-info .container div {
+          margin: 0; }
+        header.page-header .header-navigation.header-navigation-fifth .header-info ul.social {
+          float: none; }
+  section.section-second ul {
+    padding-left: 15px; }
+    section.section-second ul.items-in-line {
+      padding-left: 15px; }
+      section.section-second ul.items-in-line li {
+        width: 100%;
+        padding-left: 73px;
+        background-repeat: no-repeat;
+        margin-bottom: 42px;
+        position: relative;
+        text-align: left; }
+        section.section-second ul.items-in-line li:nth-last-child(2) {
+          margin-bottom: 42px; }
+        section.section-second ul.items-in-line li:last-child {
+          margin-bottom: 0; }
+        section.section-second ul.items-in-line li img {
+          position: absolute;
+          top: 0;
+          left: 0; }
+  section.section-more-about-us {
+    padding: 10px 0 60px; }
+  section.section-posts {
+    padding: 60px 0 30px; }
+  section.section-our-services {
+    padding: 60px 0 0; }
+    section.section-our-services ul {
+      padding-left: 15px; }
+      section.section-our-services ul li {
+        padding-right: 0;
+        width: 100%; }
+        section.section-our-services ul li:last-child {
+          margin-bottom: 0; }
+        section.section-our-services ul li:nth-child(2n) img {
+          background-position: 0 0; }
+  section.section-portfolio.inversion-portfolio .section-header {
+    padding: 40px 0 30px; }
+  section.section-portfolio .section-title {
+    display: block; }
+  section.section-portfolio .section-navigation {
+    float: none;
+    width: 100%;
+    text-align: center; }
+    section.section-portfolio .section-navigation li a {
+      padding: 15px;
+      margin-bottom: 0; }
+      section.section-portfolio .section-navigation li a::after {
+        display: none; }
+  section.section-portfolio .content.grid-4 a.portfolio-item {
+    width: 47.2%;
+    padding-top: 47.2%; }
+  section.section-portfolio .content-button {
+    padding: 40px 20px; }
+  section.section-amazing-design {
+    padding-top: 60px; }
+    section.section-amazing-design .content-button {
+      padding: 40px 20px; }
+  section.section-first-slider {
+    padding-top: 60px; }
+    section.section-first-slider .owl-navigation {
+      margin-top: 45px; }
+  section.section-posts .posts,
+  section.section-blog .posts {
+    max-width: 400px;
+    margin: auto; }
+  section.section-posts .posts-item,
+  section.section-blog .posts-item {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 0 15px; }
+  section.section-blog {
+    padding: 60px 0; }
+    section.section-blog .content-button {
+      padding: 20px 0 0; }
+  section.section-posts .section-title {
+    margin-bottom: 40px; }
+  section.section-form {
+    padding: 60px 0; }
+  footer.page-footer {
+    padding-top: 50px; }
+    footer.page-footer .footer-column {
+      margin-bottom: 60px; }
+    footer.page-footer p {
+      margin: 30px 0; }
+  section.section-our-process {
+    padding: 60px 0; }
+    section.section-our-process .section-title {
+      margin-bottom: 40px; }
+  section.section-team {
+    padding: 60px 0; }
+    section.section-team .section-title {
+      margin-bottom: 30px; }
+    section.section-team .slider-nav {
+      margin-top: 30px; }
+  section.section-work {
+    padding: 60px 0; }
+    section.section-work .work-slider .slider-nav {
+      top: 300px; }
+    section.section-work .work-slider .slide .img {
+      height: 300px; }
+    section.section-work .video-item, section.section-work .audio-item {
+      height: 300px; }
+  article {
+    padding: 60px 0; }
+    article .article-comments .comment {
+      padding-left: 65px;
+      margin-bottom: 40px; }
+      article .article-comments .comment-replied {
+        margin-left: 50px; }
+      article .article-comments .comment p {
+        font-size: 14px;
+        margin: 20px 0; }
+    article .article-comments .avatar {
+      width: 50px;
+      height: 50px; }
+    article .article-comments span.name {
+      display: block;
+      font-size: 12px;
+      margin-bottom: 5px; }
+  form.second-form input, form.second-form textarea {
+    margin-bottom: 15px; }
+  form.second-form .content-button {
+    text-align: center; }
+  section.section-contact {
+    padding: 60px 0; }
+    section.section-contact .map {
+      margin: 0 -15px;
+      height: 400px; }
+  .wrapper-benjamin .section-title {
+    padding-top: 0; }
+  .wrapper-benjamin header.page-header.page-header-slider .header-content {
+    margin-top: 70px; }
+  .wrapper-benjamin header.page-header.page-header-slider .header-slider-dots {
+    position: static;
+    margin-bottom: 0; }
+  .wrapper-benjamin header.page-header.page-header-text-slider {
+    padding-bottom: 0; }
+    .wrapper-benjamin header.page-header.page-header-text-slider .text-slider {
+      margin-top: 100px;
+      padding: 40px 20px; }
+    .wrapper-benjamin header.page-header.page-header-text-slider .text-slider-nav {
+      text-align: center; }
+  .wrapper-benjamin header.page-header .header-navigation.header-navigation-fifth .header-info a.button {
+    float: none;
+    margin-top: 20px; }
+  .wrapper-benjamin section.section-our-services {
+    padding: 60px 0; }
+  .wrapper-benjamin section.section-who-we-are .text {
+    padding: 60px 15px; }
+    .wrapper-benjamin section.section-who-we-are .text .content {
+      margin: auto; }
+  .wrapper-benjamin section.section-who-we-are .content-button {
+    text-align: center; }
+  .wrapper-benjamin section.section-about-us {
+    padding: 60px 0; }
+    .wrapper-benjamin section.section-about-us .section-title {
+      margin-bottom: 40px; }
+    .wrapper-benjamin section.section-about-us .choose {
+      margin-bottom: 60px; }
+    .wrapper-benjamin section.section-about-us .skills .section-title {
+      margin-bottom: 20px; }
+  .wrapper-benjamin section.section-help {
+    padding: 60px 0 10px; }
+    .wrapper-benjamin section.section-help .section-title {
+      margin-bottom: 30px; }
+    .wrapper-benjamin section.section-help .achievement:nth-child(1n)::after {
+      display: none; }
+  .wrapper-benjamin section.section-contact-with-us .title {
+    text-align: center;
+    margin-bottom: 20px; }
+  .wrapper-benjamin section.section-contact-with-us .right, .wrapper-benjamin section.section-contact-with-us .left {
+    display: block; }
+  .wrapper-benjamin section.section-contact-with-us .right {
+    margin-top: 50px;
+    text-align: center;
+    float: none; }
+  .wrapper-benjamin section.section-portfolio {
+    padding: 60px 0; }
+    .wrapper-benjamin section.section-portfolio .content.grid-3 a.portfolio-item {
+      width: 47.3%;
+      padding-top: 47.26%; }
+    .wrapper-benjamin section.section-portfolio .content.grid-4 a.portfolio-item span.title {
+      font-size: 14px;
+      padding: 22px 15px; }
+  .wrapper-benjamin section.section-first-slider {
+    padding: 80px 0 40px; }
+    .wrapper-benjamin section.section-first-slider .owl-dots {
+      margin-top: 20px; }
+  .wrapper-benjamin section.section-brands .brand-item {
+    width: 100%; }
+  .wrapper-benjamin section.section-form {
+    padding: 60px 0; }
+  .wrapper-benjamin section.section-who-we-are-second .item:last-child .text {
+    margin: 20px 0 0; }
+  .wrapper-benjamin section.section-team {
+    padding: 80px 0 50px; }
+    .wrapper-benjamin section.section-team .employee {
+      width: 50%;
+      margin: 0 auto 30px; }
+  .wrapper-benjamin section.section-services {
+    padding: 60px 0 20px; }
+    .wrapper-benjamin section.section-services .services-item {
+      width: 100%;
+      max-width: 345px;
+      float: none;
+      margin: auto; }
+  .wrapper-benjamin section.section-services-second .services-item {
+    padding: 0 15px;
+    margin-bottom: 30px; }
+    .wrapper-benjamin section.section-services-second .services-item > a {
+      position: relative;
+      left: auto;
+      top: auto;
+      width: 100%;
+      height: 177px; }
+    .wrapper-benjamin section.section-services-second .services-item .content {
+      padding: 15px 0; }
+  .wrapper-benjamin section.section-service {
+    padding: 60px 0 30px; }
+    .wrapper-benjamin section.section-service .section-sidebar a.button {
+      margin: 50px auto; }
+    .wrapper-benjamin section.section-service .section-content .item .text, .wrapper-benjamin section.section-service .section-content .item .img {
+      float: none;
+      padding: 0; }
+    .wrapper-benjamin section.section-service .section-content .item .text {
+      width: 100%; }
+    .wrapper-benjamin section.section-service .section-content .item .img {
+      margin: 0 auto 25px;
+      width: 260px;
+      height: 260px; }
+  .wrapper-benjamin section.section-work {
+    padding: 60px 0 0; }
+  .wrapper-benjamin section.section-blog,
+  .wrapper-benjamin article {
+    padding: 60px 0 10px; }
+    .wrapper-benjamin section.section-blog .posts-item,
+    .wrapper-benjamin article .posts-item {
+      width: 100%; }
+  .wrapper-benjamin article .article-title {
+    margin-bottom: 30px;
+    padding-left: 85px; }
+    .wrapper-benjamin article .article-title .title {
+      font-size: 18px; }
+  .wrapper-benjamin article img.post-img {
+    margin-bottom: 30px; }
+  .wrapper-benjamin section.section-text {
+    padding: 60px 0 10px; }
+  .wrapper-benjamin section.section-map .container-fluid .row .container {
+    position: static;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+  .wrapper-benjamin section.section-map .map {
+    height: 70vh !important; }
+  .wrapper-benjamin section.section-map .company-info {
+    padding: 60px 0;
+    margin: 0 -15px; }
+  .wrapper-benjamin section.section-map ul {
+    margin: 0; }
+  .wrapper-ortego header.page-header .header-content .section-title {
+    font-size: 32px; }
+  .wrapper-ortego header.page-header .header-content .buttons {
+    text-align: center; }
+  .wrapper-ortego header.page-header .header-content a.button {
+    margin-right: 0;
+    clear: both; }
+  .wrapper-ortego header.page-header a.scroll-down {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    margin: 50px auto 0; }
+  .wrapper-ortego header.page-header.third-page-header {
+    padding-bottom: 0; }
+    .wrapper-ortego header.page-header.third-page-header .header-content .content div div:nth-child(1) input {
+      margin-bottom: 30px; }
+    .wrapper-ortego header.page-header.third-page-header .header-content .section-title {
+      max-width: none;
+      font-size: 30px; }
+  .wrapper-ortego section.section-second ul.items li {
+    padding-left: 95px;
+    margin-bottom: 40px; }
+    .wrapper-ortego section.section-second ul.items li span.icon {
+      width: 80px;
+      height: 80px; }
+  .wrapper-ortego section.section-ortego .text .text-content {
+    padding: 30px 0; }
+  .wrapper-ortego section.section-join {
+    padding: 60px 0; }
+  .wrapper-ortego section.section-popular-posts,
+  .wrapper-ortego section.section-new-posts {
+    padding: 55px 0 45px; }
+    .wrapper-ortego section.section-popular-posts .section-title,
+    .wrapper-ortego section.section-new-posts .section-title {
+      margin-bottom: 30px; }
+    .wrapper-ortego section.section-popular-posts .posts,
+    .wrapper-ortego section.section-new-posts .posts {
+      margin: 0 -15px; }
+    .wrapper-ortego section.section-popular-posts .post-item,
+    .wrapper-ortego section.section-new-posts .post-item {
+      width: 100%;
+      padding: 0; }
+      .wrapper-ortego section.section-popular-posts .post-item div,
+      .wrapper-ortego section.section-new-posts .post-item div {
+        border-left: 0;
+        border-right: 0; }
+      .wrapper-ortego section.section-popular-posts .post-item .post-content, .wrapper-ortego section.section-popular-posts .post-item .post-info,
+      .wrapper-ortego section.section-new-posts .post-item .post-content,
+      .wrapper-ortego section.section-new-posts .post-item .post-info {
+        padding: 15px; }
+  .wrapper-ortego section.section-latest-posts {
+    padding: 55px 0 45px; }
+    .wrapper-ortego section.section-latest-posts .section-title {
+      margin-bottom: 30px; }
+    .wrapper-ortego section.section-latest-posts .video-item, .wrapper-ortego section.section-latest-posts a {
+      margin-bottom: 14px; }
+      .wrapper-ortego section.section-latest-posts .video-item.item-large, .wrapper-ortego section.section-latest-posts a.item-large {
+        height: 200px; }
+      .wrapper-ortego section.section-latest-posts .video-item.item-middle, .wrapper-ortego section.section-latest-posts a.item-middle {
+        height: 160px; }
+      .wrapper-ortego section.section-latest-posts .video-item.item-small, .wrapper-ortego section.section-latest-posts a.item-small {
+        height: 100px; }
+    .wrapper-ortego section.section-latest-posts .grid {
+      padding: 0 7px; }
+      .wrapper-ortego section.section-latest-posts .grid .col-md-6, .wrapper-ortego section.section-latest-posts .grid .col-md-4, .wrapper-ortego section.section-latest-posts .grid .col-md-8 {
+        padding: 0 7px; }
+        .wrapper-ortego section.section-latest-posts .grid .col-md-6 .row, .wrapper-ortego section.section-latest-posts .grid .col-md-4 .row, .wrapper-ortego section.section-latest-posts .grid .col-md-8 .row {
+          margin: 0 -7px; }
+  .wrapper-ortego header.page-header.user-profile {
+    padding: 0; }
+    .wrapper-ortego header.page-header.user-profile .header-content {
+      margin-top: 0;
+      padding: 0 0 50px;
+      position: absolute;
+      width: 100%;
+      left: 50%; }
+      .wrapper-ortego header.page-header.user-profile .header-content .follow .following {
+        float: right; }
+    .wrapper-ortego header.page-header.user-profile .header-navigation .options a:not(.me) {
+      padding: 0 10px;
+      width: 50px; }
+    .wrapper-ortego header.page-header.user-profile .header-navigation .options a.me {
+      max-width: 170px;
+      font-size: 14px;
+      min-width: auto;
+      padding: 0 10px 0 5px; }
+    .wrapper-ortego header.page-header.user-profile .header-navigation .options a {
+      height: 50px;
+      line-height: 50px; }
+      .wrapper-ortego header.page-header.user-profile .header-navigation .options a .avatar {
+        width: 40px;
+        height: 40px;
+        margin: -3px 10px 0 0; }
+  .wrapper-ortego section.section-profile {
+    padding-bottom: 0; }
+    .wrapper-ortego section.section-profile .col-md-8, .wrapper-ortego section.section-profile .col-md-4 {
+      padding: 0; }
+    .wrapper-ortego section.section-profile .profile-sidebar .sidebar-row .sidebar-item {
+      border-left: 0;
+      border-right: 0; }
+    .wrapper-ortego section.section-profile .profile-content nav a {
+      margin: 0 10px; }
+    .wrapper-ortego section.section-profile .profile-content .content-item {
+      border-left: 0;
+      border-right: 0; }
+      .wrapper-ortego section.section-profile .profile-content .content-item .post-item button.delete-post {
+        top: 0;
+        right: 0; }
+      .wrapper-ortego section.section-profile .profile-content .content-item .post-item .img-item.item-large, .wrapper-ortego section.section-profile .profile-content .content-item .post-item .video-item.item-large {
+        height: 300px; }
+      .wrapper-ortego section.section-profile .profile-content .content-item .post-item .img-item.item-middle, .wrapper-ortego section.section-profile .profile-content .content-item .post-item .video-item.item-middle {
+        height: 210px; }
+      .wrapper-ortego section.section-profile .profile-content .content-item .post-item .img-item.item-small, .wrapper-ortego section.section-profile .profile-content .content-item .post-item .video-item.item-small {
+        height: 160px; }
+      .wrapper-ortego section.section-profile .profile-content .content-item .post-item .post-content {
+        padding: 15px; }
+      .wrapper-ortego section.section-profile .profile-content .content-item .post-item .post-info {
+        padding: 15px; }
+      .wrapper-ortego section.section-profile .profile-content .content-item .post-item .post-comment {
+        padding: 20px 20px 20px 85px;
+        min-height: auto; }
+        .wrapper-ortego section.section-profile .profile-content .content-item .post-item .post-comment .avatar {
+          width: 50px;
+          height: 50px;
+          top: 20px;
+          left: 15px; }
+        .wrapper-ortego section.section-profile .profile-content .content-item .post-item .post-comment form input {
+          margin: 2px 0 0;
+          font-size: 14px;
+          padding: 10px; }
+    .wrapper-ortego section.section-profile .profile-content .profile-member .member-name, .wrapper-ortego section.section-profile .profile-content .profile-member .member-address {
+      max-width: 180px; }
+    .wrapper-ortego section.section-profile .photos-gallery {
+      padding: 10px; }
+  .wrapper-ortego section.section-messages {
+    padding: 30px 0; }
+    .wrapper-ortego section.section-messages .messages-window {
+      padding: 0;
+      margin: 0 -15px; }
+    .wrapper-ortego section.section-messages .chat-member .chat-input form .files-to-upload div {
+      width: 65px; } }
+
+@media only screen and (max-width: 620px) {
+  .wrapper-ortego section.section-profile .profile-content .profile-member {
+    padding: 15px; }
+    .wrapper-ortego section.section-profile .profile-content .profile-member > div {
+      float: none; }
+    .wrapper-ortego section.section-profile .profile-content .profile-member .member-avatar {
+      width: 70px;
+      height: 70px; }
+    .wrapper-ortego section.section-profile .profile-content .profile-member .member-name, .wrapper-ortego section.section-profile .profile-content .profile-member .member-address {
+      max-width: 200px; }
+      .wrapper-ortego section.section-profile .profile-content .profile-member .member-name.member-name, .wrapper-ortego section.section-profile .profile-content .profile-member .member-address.member-name {
+        margin-top: 14px; }
+    .wrapper-ortego section.section-profile .profile-content .profile-member .buttons {
+      float: none;
+      display: block;
+      text-align: center; } }
+
+@media only screen and (max-width: 560px) {
+  .wrapper-ortego section.section-profile .profile-content .checkbox:not(:last-child) {
+    padding-right: 20px; }
+  .wrapper-ortego section.section-profile .profile-content .content {
+    padding: 15px; }
+  .wrapper-ortego section.section-profile .profile-content .bottom {
+    text-align: center;
+    padding: 15px; }
+  .wrapper-ortego section.section-profile .profile-content table tr.gender td:nth-child(3) {
+    margin-bottom: 20px; }
+  .wrapper-ortego section.section-profile .profile-content table tr.gender .checkbox {
+    display: inline-block;
+    margin-bottom: 10px; }
+  .wrapper-ortego section.section-profile .profile-content table tr td {
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px; }
+    .wrapper-ortego section.section-profile .profile-content table tr td:nth-child(1) {
+      margin-bottom: 10px; }
+  .wrapper-ortego section.section-messages .messages-window .list-members {
+    width: 280px; }
+    .wrapper-ortego section.section-messages .messages-window .list-members .list-member {
+      padding: 15px; }
+  .wrapper-ortego section.section-messages .messages-window .chat-member .chat-title {
+    padding-right: 15px; }
+  .wrapper-ortego section.section-messages .messages-window .chat-member .name {
+    max-width: 220px; }
+  .wrapper-ortego section.section-messages .messages-window .chat-member .chat-input form textarea {
+    padding: 15px 100px 15px 15px; }
+  .wrapper-ortego section.section-messages .messages-window .chat-member .chat-input form button {
+    width: 40px;
+    height: 78px;
+    margin: 0; }
+  .wrapper-ortego section.section-messages .messages-window .chat-member .chat-input form .choose-file-buttons {
+    padding-right: 10px; }
+    .wrapper-ortego section.section-messages .messages-window .chat-member .chat-input form .choose-file-buttons a {
+      padding: 11px 10px;
+      display: block; }
+  .wrapper-ortego section.section-messages .messages-window .chat-member .chat-input form .files-to-upload {
+    margin: 0 100px 0 15px; }
+    .wrapper-ortego section.section-messages .messages-window .chat-member .chat-input form .files-to-upload div {
+      width: 65px; }
+  .wrapper-ortego section.section-messages .messages-window .chat-member .chat-message .message-content {
+    padding: 15px; }
+  .wrapper-ortego section.section-messages .messages-window .chat-member .chat-message.message-in {
+    padding: 15px 15px 15px 90px; }
+    .wrapper-ortego section.section-messages .messages-window .chat-member .chat-message.message-in .date {
+      top: 70px;
+      left: 13px;
+      right: auto; }
+    .wrapper-ortego section.section-messages .messages-window .chat-member .chat-message.message-in .avatar {
+      left: 17px;
+      top: 5px; }
+  .wrapper-ortego section.section-messages .messages-window .chat-member .chat-message.message-out {
+    padding: 15px 90px 15px 15px; }
+    .wrapper-ortego section.section-messages .messages-window .chat-member .chat-message.message-out .date {
+      top: 70px;
+      right: 13px;
+      left: auto; }
+    .wrapper-ortego section.section-messages .messages-window .chat-member .chat-message.message-out .avatar {
+      right: 17px;
+      top: 5px; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  header.page-header .header-content .text-slider {
+    padding: 60px 30px 40px;
+    margin: 200px -15px 0; }
+    header.page-header .header-content .text-slider .text-slider-nav {
+      text-align: center; }
+  section.section-portfolio .content a.portfolio-item, section.section-portfolio .content.fluid-3 a.portfolio-item, section.section-portfolio .content.grid-3 a.portfolio-item, section.section-portfolio .content.fluid-4 a.portfolio-item, section.section-portfolio .content.grid-4 a.portfolio-item {
+    padding-top: 56.25%;
+    background-color: #a8a8a8;
+    width: 100%; }
+    section.section-portfolio .content a.portfolio-item span.icon, section.section-portfolio .content.fluid-3 a.portfolio-item span.icon, section.section-portfolio .content.grid-3 a.portfolio-item span.icon, section.section-portfolio .content.fluid-4 a.portfolio-item span.icon, section.section-portfolio .content.grid-4 a.portfolio-item span.icon {
+      width: 70px;
+      height: 70px; }
+    section.section-portfolio .content a.portfolio-item:nth-child(2), section.section-portfolio .content a.portfolio-item:nth-child(3), section.section-portfolio .content a.portfolio-item:nth-child(6), section.section-portfolio .content a.portfolio-item:nth-child(7), section.section-portfolio .content a.portfolio-item:nth-child(10), section.section-portfolio .content a.portfolio-item:nth-child(11), section.section-portfolio .content.fluid-3 a.portfolio-item:nth-child(2), section.section-portfolio .content.fluid-3 a.portfolio-item:nth-child(3), section.section-portfolio .content.fluid-3 a.portfolio-item:nth-child(6), section.section-portfolio .content.fluid-3 a.portfolio-item:nth-child(7), section.section-portfolio .content.fluid-3 a.portfolio-item:nth-child(10), section.section-portfolio .content.fluid-3 a.portfolio-item:nth-child(11), section.section-portfolio .content.grid-3 a.portfolio-item:nth-child(2), section.section-portfolio .content.grid-3 a.portfolio-item:nth-child(3), section.section-portfolio .content.grid-3 a.portfolio-item:nth-child(6), section.section-portfolio .content.grid-3 a.portfolio-item:nth-child(7), section.section-portfolio .content.grid-3 a.portfolio-item:nth-child(10), section.section-portfolio .content.grid-3 a.portfolio-item:nth-child(11), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(2), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(3), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(6), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(7), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(10), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(11), section.section-portfolio .content.grid-4 a.portfolio-item:nth-child(2), section.section-portfolio .content.grid-4 a.portfolio-item:nth-child(3), section.section-portfolio .content.grid-4 a.portfolio-item:nth-child(6), section.section-portfolio .content.grid-4 a.portfolio-item:nth-child(7), section.section-portfolio .content.grid-4 a.portfolio-item:nth-child(10), section.section-portfolio .content.grid-4 a.portfolio-item:nth-child(11) {
+      background-color: #a8a8a8; }
+    section.section-portfolio .content a.portfolio-item:nth-child(2n), section.section-portfolio .content.fluid-3 a.portfolio-item:nth-child(2n), section.section-portfolio .content.grid-3 a.portfolio-item:nth-child(2n), section.section-portfolio .content.fluid-4 a.portfolio-item:nth-child(2n), section.section-portfolio .content.grid-4 a.portfolio-item:nth-child(2n) {
+      background-color: #bfbfbf; }
+  section.section-portfolio .content.grid-3 .portfolio-items, section.section-portfolio .content.grid-4 .portfolio-items {
+    padding: 0 15px; }
+    section.section-portfolio .content.grid-3 .portfolio-items a.portfolio-item, section.section-portfolio .content.grid-4 .portfolio-items a.portfolio-item {
+      margin: 0 0 15px 0; }
+  section.section-images .img {
+    padding-top: 56.25%;
+    width: 100%; }
+  section.section-work .work-slider .slider-nav {
+    top: 240px; }
+  section.section-work .work-slider .slide .img {
+    height: 240px; }
+  section.section-work .video-item, section.section-work .audio-item {
+    height: 240px; }
+  section.section-posts .posts-item .content,
+  section.section-blog .posts-item .content {
+    padding: 20px 24px 18px; }
+  .wrapper-benjamin header.page-header .header-navigation.header-navigation-seventh a.search, .wrapper-benjamin header.page-header .header-navigation.header-navigation-eighth a.search, .wrapper-benjamin header.page-header .header-navigation.header-navigation-ninth a.search {
+    font-size: 0; }
+  .wrapper-benjamin section.section-portfolio .content.grid-3 .portfolio-items, .wrapper-benjamin section.section-portfolio .content.grid-4 .portfolio-items {
+    padding: 0 15px; }
+  .wrapper-benjamin section.section-portfolio .content.grid-3 a.portfolio-item, .wrapper-benjamin section.section-portfolio .content.grid-4 a.portfolio-item {
+    padding-top: 56.25%;
+    background-color: #a8a8a8;
+    width: 100%; }
+  .wrapper-benjamin section.section-portfolio .content.grid-4 a.portfolio-item {
+    padding-top: 60%; }
+  .wrapper-benjamin section.section-team .employee {
+    width: 100%;
+    max-width: 250px;
+    float: none;
+    margin: 0 auto 30px; }
+  .wrapper-ortego header.page-header .header-navigation {
+    height: auto; }
+    .wrapper-ortego header.page-header .header-navigation a.logo {
+      float: left;
+      vertical-align: middle; }
+    .wrapper-ortego header.page-header .header-navigation a.button {
+      clear: both;
+      float: right;
+      margin: 9px 0;
+      padding: 10px; }
+      .wrapper-ortego header.page-header .header-navigation a.button:nth-child(2) {
+        margin-top: 0; }
+    .wrapper-ortego header.page-header .header-navigation .options a.me {
+      display: none; }
+  .wrapper-ortego header.page-header.third-page-header .header-content form {
+    max-width: none;
+    margin: 0 -15px;
+    text-align: center; }
+    .wrapper-ortego header.page-header.third-page-header .header-content form .content {
+      padding: 30px 15px; }
+      .wrapper-ortego header.page-header.third-page-header .header-content form .content div {
+        margin-bottom: 15px; }
+        .wrapper-ortego header.page-header.third-page-header .header-content form .content div div:nth-child(1) input {
+          margin-bottom: 0; }
+        .wrapper-ortego header.page-header.third-page-header .header-content form .content div div:nth-child(2) {
+          margin-bottom: 0; }
+      .wrapper-ortego header.page-header.third-page-header .header-content form .content > input {
+        margin-bottom: 15px; }
+      .wrapper-ortego header.page-header.third-page-header .header-content form .content a {
+        display: block;
+        text-align: center;
+        margin-top: 15px; }
+      .wrapper-ortego header.page-header.third-page-header .header-content form .content button, .wrapper-ortego header.page-header.third-page-header .header-content form .content a.button {
+        margin: 15px 0 0; }
+  .wrapper-ortego section.section-profile .profile-sidebar a.button:not(.edit) {
+    max-width: 145px; }
+  .wrapper-ortego section.section-profile .profile-content .content-item .post-item .img-item.item-large, .wrapper-ortego section.section-profile .profile-content .content-item .post-item .video-item.item-large {
+    height: 220px; }
+  .wrapper-ortego section.section-profile .profile-content .content-item .post-item .img-item.item-middle, .wrapper-ortego section.section-profile .profile-content .content-item .post-item .video-item.item-middle {
+    height: 150px; }
+  .wrapper-ortego section.section-profile .profile-content .content-item .post-item .img-item.item-small, .wrapper-ortego section.section-profile .profile-content .content-item .post-item .video-item.item-small {
+    height: 120px; }
+  .wrapper-ortego section.section-profile .profile-content .photos-gallery .item-long {
+    height: 180px; }
+  .wrapper-ortego section.section-profile .profile-content .photos-gallery .item-short {
+    height: 140px; }
+  .wrapper-ortego section.section-profile .profile-content .photos-gallery .item-very-short {
+    height: 90px; } }
+
+@media only screen and (max-width: 410px) {
+  .wrapper-ortego header.page-header.user-profile button.delete-background-photo {
+    top: 10px;
+    right: 10px; }
+  .wrapper-ortego header.page-header.user-profile .background-img {
+    height: 420px; }
+  .wrapper-ortego header.page-header.user-profile .header-content {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    left: auto;
+    bottom: auto;
+    position: relative;
+    padding: 50px 0; }
+    .wrapper-ortego header.page-header.user-profile .header-content .user-info .status {
+      position: relative; }
+      .wrapper-ortego header.page-header.user-profile .header-content .user-info .status button {
+        position: absolute;
+        top: 10px;
+        margin: 0;
+        right: 0; }
+      .wrapper-ortego header.page-header.user-profile .header-content .user-info .status textarea, .wrapper-ortego header.page-header.user-profile .header-content .user-info .status p {
+        padding-right: 30px;
+        width: 100%;
+        height: 96px; }
+    .wrapper-ortego header.page-header.user-profile .header-content .follow {
+      margin-top: 0; } }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }

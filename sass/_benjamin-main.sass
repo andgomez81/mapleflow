@@ -1,0 +1,1192 @@
+@import "fonts"
+
+// Re-Styles for benjamin theme
+.wrapper-benjamin
+	&.wrapper-headers
+		background-color: #585a65
+		header.page-header
+			height: auto
+
+	.video-item
+		&::before
+			background-color: #070e37
+
+	.items
+		.item
+			padding-left: 70px
+			position: relative
+			margin-bottom: 50px
+			img	
+				position: absolute
+				top: 0
+				left: 0
+			div
+				color: #141a4a
+				font: 700 14px/1.3 $roboto
+				text-transform: uppercase
+			p
+				color: #3a3a3a
+				font: 300 16px/1.5 $roboto
+				margin: 10px 0
+
+	.hidden-navigation,.hidden-navigation-second
+		background-color: #000416
+		nav
+			li
+				a
+					&.active, &:hover, &:focus
+						color: $accent-benjamin-second
+		&.hidden-navigation-second
+			a.logo
+				background-color: transparent
+
+	header.page-header
+		border-bottom: 4px solid $accent-benjamin-second
+		position: relative
+		background-color: #ddd
+		&.page-header-slider
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(#000416,.6)
+			.header-slider
+				text-align: center
+				p
+					font: 300 18px/1.5 $roboto
+					margin: 20px auto
+			.header-slider-dots
+				margin-bottom: 50px
+		&.page-header-video
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(#000416,.6)
+			.header-content
+				p
+					max-width: 750px
+					font: 300 18px/1.5 $roboto
+					margin: 20px auto
+		&.second-page-header
+			border: 0
+			padding: 0
+			&::before
+				display: none
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-color: rgba(#070e37,.9)
+			.section-title
+				margin: 0
+			.header-content
+				padding: 50px 0 55px
+		.header-navigation
+			background-color: #fff
+			&::after
+				content: ''
+				position: absolute
+				top: 100%
+				left: 0
+				width: 100%
+				border-bottom: 4px solid $accent-benjamin-second
+			a.menu-open
+				span
+					border-color: $accent-benjamin
+					&::after,&::before
+						border-color: $accent-benjamin
+			nav
+				a
+					color: #121212
+					&.active
+						color: $accent-benjamin
+						&::after
+							display: none
+						&::before
+							width: 14px
+							height: 0
+							border-bottom: 1px solid $accent-benjamin
+							margin-left: -7px
+							top: 34px
+					&.search
+						background-image: url('../img/benjamin-search-icon.png')
+			&.header-navigation-fifth
+				.header-info
+					background-color: $accent-benjamin
+					.phone,.email
+						&.phone::before
+							background-image: url('../img/phone-icon-benjamin.png')
+						&.email::before
+							background-image: url('../img/mail-icon-benjamin.png')
+					a.button
+						color: $accent-benjamin
+						padding: 18px 20px
+						vertical-align: top
+						min-width: 190px
+						float: right
+			&.header-navigation-sixth
+				background-color: #000416
+				nav
+					a
+						color: #fff
+						&.active
+							color: $accent-benjamin-second
+							&::before
+								border-color: $accent-benjamin-second
+						&.search
+							background-image: url('../img/search-icon.png')
+				a.menu-open 
+					span
+						border-color: #fff
+						&::before, &::after
+							border-color: #fff
+			&.header-navigation-seventh,
+			&.header-navigation-eighth,
+			&.header-navigation-ninth
+				background-color: #000416
+				nav
+					a
+						color: #fff
+						font: 300 14px/100px $roboto
+						&.search
+							width: auto
+							padding-right: 36px
+							background-image: url('../img/search-icon.png')
+				a.menu-open 
+					display: inline-block
+					height: 100px
+					span
+						border-color: #fff
+						&::before, &::after
+							border-color: #fff
+			&.header-navigation-eighth,
+			&.header-navigation-ninth
+				a.logo
+					left: 50%
+					position: absolute
+					transform: translate3d(-50%, 0, 0)
+				a.menu-open
+					display: inline-block
+					float: left
+					position: relative
+					height: 100px
+					left: 15px
+					top: auto
+			&.header-navigation-ninth
+				background-color: #fff
+				nav
+					a
+						color: #101010
+						&.search
+							background-image: url('../img/benjamin-search-icon.png')
+				a.menu-open 
+					span
+						border-color: #101010
+						&::before, &::after
+							border-color: #101010
+		.header-bottom-content
+			bottom: 0
+		.megamenu
+			background-color: #000416
+			border-color: $accent-benjamin-second
+			border-top-width: 4px
+			li a
+				color: #bababa
+		.submenu 
+			background-color: #000416
+			border-color: $accent-benjamin-second
+			border-top-width: 4px
+			li a
+				color: #bababa
+			li a:hover
+				color: $accent-benjamin-second
+		.header-search
+			background-color: #fff
+			form 
+				*::-webkit-input-placeholder
+					color: #121212
+					opacity: 1
+				*:-moz-placeholder
+					color: #121212
+					opacity: 1
+				*::-moz-placeholder
+					color: #121212
+					opacity: 1
+				*:-ms-input-placeholder
+					color: #121212
+					opacity: 1
+				input
+					color: #121212
+					border-color: #121212
+				button
+					background-color: #fff
+					background-image: url('../img/benjamin-search-icon.png')
+
+	.section-title
+		font: 900 30px/1.1 $roboto
+		color: #fff
+		text-transform: uppercase
+		padding: 20px 0 0 0
+		&.inversion-title
+			color: #121212
+			&::before
+				border-color: #121212
+		&.center-title
+			text-align: center
+			&::before
+				left: 50%
+				margin-left: -15px
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			width: 30px
+			height: 0
+			left: 0
+			border-bottom: 1px solid
+		&.without-line
+			&::before
+				display: none
+
+	section.section-our-services
+		padding: 100px 0
+		.items
+			margin: 60px 0 0
+		.content-button
+			text-align: center
+
+	section.section-who-we-are
+		.picture
+			background-size: cover
+			background-position: center
+		.text
+			position: relative
+			padding: 100px 85px
+			&::after
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				background-color: rgba(#070e37,.9)
+				width: 100%
+				height: 100%
+			.content
+				position: relative
+				z-index: 1
+				max-width: 490px
+			.section-title
+				margin-bottom: 50px
+			p
+				color: #fff
+				font: 300 16px/1.5 $roboto
+				margin: 25px 0
+			a.button
+				margin-top: 25px
+
+	section.section-about-us
+		padding: 100px 0
+		border-bottom: 4px solid $accent-benjamin-second
+		.section-title
+			margin-bottom: 55px
+		.items .item:last-child
+			margin-bottom: 0
+		.skills
+			padding-left: 70px
+			.section-title
+				margin-bottom: 50px
+			p
+				margin: 20px 0
+				color: #3a3a3a
+				font: 300 16px/1.5 $roboto
+			ul
+				padding: 0
+				margin: 42px 0 0
+				li
+					margin-bottom: 33px
+					&:last-child
+						margin-bottom: 0
+						.progress
+							margin-bottom: 0
+				.title
+					font: 700 14px/1.1 $roboto
+					text-transform: uppercase
+					display: inline-block
+				.progress-number
+					display: inline-block
+					font: 400 14px/1.1 $roboto
+					color: #121212
+				.progress
+					height: 10px
+					margin-top: 12px
+					background-color: $accent-benjamin
+					border-radius: 0
+					box-shadow: none
+				.progress-bar
+					background-color: $accent-benjamin-second
+					box-shadow: none
+
+	section.section-help
+		padding: 90px 0 40px
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(#070e37, .9)
+		.container
+			z-index: 1
+			position: relative
+		.section-title
+			margin-bottom: 50px
+		p
+			text-align: center
+			color: #fff
+			font: 300 16px/1.5 $roboto
+			margin: 20px auto
+			max-width: 770px
+		.achievements
+			margin-top: 70px
+		.achievement
+			text-align: center
+			position: relative
+			margin-bottom: 60px
+			img
+				display: block
+				margin: 0 auto 25px
+			.number
+				font: 900 48px/1 $roboto
+				color: $accent-benjamin-second
+				margin-bottom: 25px
+			.title
+				font: 700 14px/1 $roboto
+				color: #fff
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				right: 0
+				border-right: 1px solid #fff
+				margin-top: -45px
+				height: 90px
+			&:nth-child(4n)::after
+				display: none
+	
+	section.section-contact-with-us
+		background-color: $accent-benjamin-second
+		padding: 30px 0 55px
+		.left, .right
+			display: inline-block
+			margin-top: 25px
+		.left
+			margin-bottom: -15px
+		.right
+			float: right
+		.title
+			font: 700 16px/1.2 $roboto
+			color: #131313
+			text-transform: uppercase
+		p
+			font: 300 16px/1.5 $roboto
+			color: #131313
+			margin: 10px 0
+
+	section.section-portfolio
+		padding: 100px 0
+		.section-title
+			display: block
+			margin-bottom: 55px
+		.content-button
+			padding: 0
+			background-color: transparent
+			margin-top: 40px
+		.content
+			a.portfolio-item
+				height: auto
+				&:hover
+					span.title
+						background-color: $accent-benjamin-second
+				span.title
+					z-index: 2
+					font: 700 14px/1.2 $roboto
+					color: $accent-benjamin
+					display: block
+					width: 100%
+					opacity: 1
+					text-transform: uppercase
+					padding: 22px 15px
+					text-align: center
+					position: absolute
+					bottom: 0
+					left: 0
+					transition: background-color .25s
+					background-color: #f1f1f1
+				.item-content
+					margin-top: -30px
+					span.icon
+						margin-bottom: 0
+				&::after
+					background-color: rgba(#09103e, 0.4)
+				.item-content
+					z-index: 1
+					span.icon
+						width: 66px
+						height: 66px
+						border-radius: 0
+						background-color: $accent-benjamin
+
+	section.section-first-slider
+		padding: 160px 0 60px
+		border-bottom: 4px solid $accent-benjamin-second
+		background-color: transparent
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(#070e37, .9)
+		.slider-wrapper
+			position: relative
+		.slide
+			padding: 0 45px
+		.slider-nav
+			position: absolute
+			top: 50%
+			left: 0
+			width: 100%
+			margin: -10px 0 0
+			.nav-arrow
+				position: relative
+				z-index: 1
+				float: left
+				background-image: url('../img/arrow-big.png')
+				&.nav-next
+					float: right
+		.nav-number
+			display: none
+		.owl-dots
+			text-align: center
+			margin: 50px 0 0
+			.owl-dot
+				height: 10px
+				width: 10px
+				margin-right: 10px
+				background-color: #fff
+				display: inline-block
+				position: relative
+				vertical-align: middle
+				&:last-child
+					margin-right: 0
+				&.active
+					width: 15px
+					height: 15px
+					background-color: transparent
+					border: 1px solid $accent-benjamin-second
+					&::before
+						content: ''
+						position: absolute
+						top: 3px
+						left: 3px
+						width: 7px
+						height: 7px
+						background-color: $accent-benjamin-second
+
+	section.section-brands
+		background-color: #f3f3f3
+		.brand-item
+			width: 20%
+			float: left
+
+	section.section-posts,
+	section.section-blog
+		.posts-item 
+			a
+			.img
+				position: relative
+				.date
+					color: #fff
+					font: 700 14px/1 $roboto
+					text-transform: uppercase
+					padding: 15px 17px
+					background-color: $accent-benjamin
+					position: absolute
+					top: 20px
+					left: 20px
+					div
+						font-size: 24px
+			.content
+				background-color: transparent
+				padding: 25px 0
+			.title a
+				margin-bottom: 0
+				color: #131313
+				font: 700 14px/1.7 $roboto
+				text-transform: uppercase
+			p
+				color: #3a3a3a
+				margin-top: 10px
+
+	section.section-form
+		padding: 115px 0
+		background-color: #fff
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(#070e37, .9)
+		.section-title
+			margin-bottom: 50px
+		.container
+			z-index: 1
+			position: relative
+		p
+			text-align: left
+		form
+			margin: 0
+			input,textarea
+				color: #fff
+				padding: 13px 20px
+			*::-webkit-input-placeholder
+				color: #fff
+				opacity: 1
+			*:-moz-placeholder
+				color: #fff
+				opacity: 1
+			*::-moz-placeholder
+				color: #fff
+				opacity: 1
+			*:-ms-input-placeholder
+				color: #fff
+				opacity: 1
+			textarea
+				min-height: 130px
+				margin-bottom: 25px
+			.content-button
+				text-align: center
+	
+	footer.page-footer
+		background-color: #000416
+
+	section.section-who-we-are-second
+		padding: 100px 0
+		img
+			width: 100%
+		.text
+			padding-top: 45px
+		.item
+			margin-bottom: 100px
+			&:last-child
+				margin-bottom: 0
+			&::after
+				content: ''
+				display: table
+				clear: both
+		.video-item
+			background-color: #f3f3f3
+			line-height: 0
+			video
+				width: 100%
+
+	section.section-about-us-second
+		background-color: #f3f3f3
+
+	section.section-team
+		padding: 100px 0 70px
+		.section-title
+			margin-bottom: 60px
+		.employee
+			width: 25%
+			padding: 0 15px
+			position: relative
+			float: left
+			margin-bottom: 30px
+			.img
+				background-size: cover
+				background-position: center
+				background-color: #dddddd
+				height: 280px
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-color: rgba(#09103e,.4)
+					opacity: 0
+			.title
+				background-color: #f1f1f1
+				text-align: center
+				padding: 16px 10px
+				transition: background-color .25s
+				position: relative
+				z-index: 1
+				.name
+					color: $accent-benjamin
+					font: 700 14px/1 $roboto
+					margin-bottom: 10px
+					text-transform: uppercase
+				.post
+					color: $accent-benjamin
+					font: 300 14px/1 $roboto
+			> div:hover
+				.title
+					background-color: $accent-benjamin-second
+				.img
+					&::after
+						opacity: 1
+					ul.social
+						opacity: 1
+		ul.social
+			position: absolute
+			top: 50%
+			transform: translate3d(0, -50%, 0)
+			opacity: 0
+			z-index: 1
+			width: 100%
+			text-align: center
+			a
+				width: 44px
+				height: 44px
+				line-height: 44px
+				margin-right: 10px
+				background: $accent-benjamin
+				padding: 0
+				img
+					vertical-align: middle
+			li:last-child
+				a
+					margin-right: 0
+
+	section.section-services
+		padding: 100px 0 60px
+		.services-item 
+			width: 33.33333%
+			float: left
+			padding: 0 15px
+			> a
+				display: inline-block
+				background-color: #ccc
+			&:nth-child(3n + 1)
+				clear: both
+			&:hover
+				.img
+					&::after
+						opacity: 1
+					.icon
+						opacity: 1
+			.img
+				position: relative
+				overflow: hidden
+				&::after
+					content: ''
+					position: absolute
+					background-color: rgba(#09103e, .4)
+					width: 100%
+					height: 100%
+					left: 0
+					top: 0
+					opacity: 0
+				img
+					width: 100%
+				.icon
+					width: 66px
+					height: 66px
+					z-index: 1
+					opacity: 0
+					position: absolute
+					top: 50%
+					left: 50%
+					transition: opacity .25s
+					margin: -33px 0 0 -33px
+					background-repeat: no-repeat
+					background-position: center
+					background-color: $accent-benjamin
+					background-image: url('../img/portfolio-icon.png')
+					div
+						font-size: 24px
+			.content
+				background-color: transparent
+				padding: 25px 0
+			.title a
+				margin-bottom: 0
+				color: #131313
+				font: 700 14px/1.7 $roboto
+				text-transform: uppercase
+			p
+				color: #3a3a3a
+				margin-top: 10px
+
+	section.section-services-second
+		padding-bottom: 50px
+		.services-item
+			width: 50%
+			position: relative
+			padding-left: 215px
+			margin-bottom: 50px
+			&:nth-child(3n + 1)
+				clear: none
+			&:nth-child(2n + 1)
+				clear: both
+			&:hover
+				> a::after
+						opacity: 1
+				.title a
+					color: $accent-benjamin
+			p
+				margin-bottom: 0
+			> a
+				position: absolute
+				top: 0
+				left: 15px
+				width: 170px
+				height: 170px
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center
+				&::after
+					content: ''
+					position: absolute
+					background-color: rgba(#09103e, .4)
+					width: 100%
+					height: 100%
+					left: 0
+					top: 0
+					opacity: 0
+			.content
+				display: inline-block
+
+	section.section-service
+		padding: 100px 0 50px
+		.section-sidebar
+			padding-right: 20px
+			ul
+				border: 4px solid $accent-benjamin
+				margin: 0
+				padding: 0
+			li
+				&:last-child
+					a
+						border-bottom: 0
+			a:not(.button)
+				color: #131313
+				font: 700 14px/1.4 $roboto
+				text-transform: uppercase
+				padding: 25px 25px 25px 50px
+				display: block
+				position: relative
+				border-bottom: 1px solid #dfdfdf
+				&:hover, &.active
+					color: $accent-benjamin
+					background-color: #f1f1f1
+					&::before
+						border-color: $accent-benjamin
+				&::before
+					content: ''
+					position: absolute
+					top: 50%
+					left: 25px
+					margin-top: -4px
+					width: 8px
+					height: 8px
+					border-bottom: 1px solid #131313
+					border-right: 1px solid #131313
+					transform: rotate(-45deg)
+			a.button
+				display: block
+				max-width: 350px
+				margin: 50px 0
+		.section-content
+			ul
+				margin: 30px 0
+				padding: 0
+			p, li
+			color: #3a3a3a
+			font: 300 16px/1.5 $roboto
+			li
+				margin-bottom: 20px
+				position: relative
+				padding-left: 16px
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 10px
+					width: 6px
+					height: 6px
+					background-color: #131313
+			p
+				margin: 25px 0
+			> .img
+				padding-top: 56.25%
+				background-size: cover
+				background-repeat: no-repeat
+				background-position: center
+				margin-bottom: 50px
+				background-color: #ccc
+			.item
+				margin-bottom: 25px
+				&::after
+					content: ''
+					display: table
+					clear: both
+				.text
+					width: 65%
+					padding-right: 50px
+					float: left
+				.img
+					width: 35%
+					padding-top: 35%
+					background-size: cover
+					background-repeat: no-repeat
+					background-position: center
+					background-color: #ccc
+					float: left
+					margin-bottom: 25px
+			.title
+				font: 900 16px/1 $roboto
+				text-transform: uppercase
+				margin: 0 0 30px
+			img
+				width: 100%
+
+	section.section-work
+		padding: 100px 0 25px
+		img
+			margin-bottom: 45px
+		.item
+			margin-bottom: 50px
+		.title
+			font: 900 16px/1 $roboto
+			text-transform: uppercase
+			margin: 0 0 30px
+		table
+			margin: -10px 0 25px
+			a
+				color: $accent-benjamin
+
+	section.section-blog,
+	article
+		padding: 100px 0 50px
+		.posts-item
+			margin-bottom: 20px
+			width: 50%
+			&:nth-child(2n + 1)
+				clear: both
+		.section-sidebar
+			padding-left: 20px
+			form
+				*::-webkit-input-placeholder
+					color: #3a3a3a
+					opacity: 1
+				*:-moz-placeholder
+					color: #3a3a3a
+					opacity: 1
+				*::-moz-placeholder
+					color: #3a3a3a
+					opacity: 1
+				*:-ms-input-placeholder
+					color: #3a3a3a
+					opacity: 1
+				.input
+					position: relative
+					margin-bottom: 60px
+					button
+						position: absolute
+						top: 0
+						right: 0
+						width: 60px
+						height: 100%
+						background-image: url('../img/benjamin-search-icon.png')
+						background-repeat: no-repeat
+						background-position: center
+				input
+					padding: 14px 60px 14px 25px
+					color: #3a3a3a
+					border: 1px solid #dfdfdf
+					line-height: 1
+					width: 100%	
+					background-color: transparent
+			.title
+				font: 900 16px/1 $roboto
+				text-transform: uppercase
+				color: #131313
+				margin-bottom: 30px
+			.item
+				margin-bottom: 60px
+			ul
+				padding: 0
+				li:last-child
+					a
+						border-bottom: 1px solid #dfdfdf
+				a
+					padding: 20px 40px 20px 20px
+					font: 300 16px/1.4 $roboto
+					color: #3a3a3a
+					border-top: 1px solid #dfdfdf
+					display: block
+					position: relative
+					span.count
+						position: absolute
+						top: 50%
+						right: 0
+						transform: translate3d(0, -50%, 0)
+					&::before
+						content: ''
+						position: absolute
+						top: 50%
+						left: 0
+						margin-top: -4px
+						width: 8px
+						height: 8px
+						border-bottom: 1px solid #3a3a3a
+						border-right: 1px solid #3a3a3a
+						transform: rotate(-45deg)
+			.popular-post
+				border-top: 1px solid #dfdfdf
+				position: relative
+				padding: 25px 0 25px 100px
+				.post-content
+					min-height: 84px
+				a
+					display: block
+				a.img
+					position: absolute
+					top: 25px
+					left: 0
+					width: 80px
+					height: 80px
+					background-size: cover
+					background-position: center
+					background-repeat: no-repeat
+					background-color: #ccc
+				&:last-child
+					border-bottom: 1px solid #dfdfdf
+				.post-title 
+					margin: -4px 0 12px
+					a
+						font: 300 16px/1.5 $roboto
+						color: #3a3a3a
+				.date
+					font: 300 14px/1 $roboto
+					color: #929292
+		.tags a
+			padding: 10px 17px
+			display: inline-block
+			border: 1px solid #dfdfdf
+			margin: 0 10px 10px 0
+			font: 300 16px/1 $roboto
+			color: #3a3a3a
+
+	article
+		img
+			&.post-img
+				margin-bottom: 47px
+				padding: 0
+		.article-title
+			margin-bottom: 40px
+			position: relative
+			padding-left: 97px
+			min-height: 69px
+			&::after
+				content: ''
+				display: table
+				clear: both
+			.title
+				color: #131313
+				font: 900 24px/1.5 $roboto
+				text-transform: uppercase
+				margin-bottom: 0
+			.date
+				color: #fff
+				font: 700 14px/1 $roboto
+				text-transform: uppercase
+				padding: 15px
+				margin: 0 30px 0 0
+				text-align: center
+				width: 66px
+				height: 66px
+				position: absolute
+				top: 3px
+				left: 0
+				background-color: $accent-benjamin
+				div
+					font-size: 24px
+		.article-info
+			background-color: #f3f3f3
+			padding: 10px 20px
+			margin-bottom: 35px
+			&::after
+				content: ''
+				display: table
+				clear: both
+			.info-item
+				text-align: center
+				padding: 10px
+				display: inline-block
+				margin-right: 20px
+				&:last-child
+					margin-right: 0
+				*
+					vertical-align: middle
+				img
+					margin-right: 5px
+				span:not(.value)
+					margin-right: 3px 
+					color: #131313
+				span.value
+					color: #3a3a3a
+		.article-content
+			img
+				margin: 10px 0
+		p
+			color: #3a3a3a
+			font: 300 16px/1.5 $roboto
+			margin: 25px 0
+		blockquote
+			border-color: $accent-benjamin
+		.article-bottom
+			margin: 5px 0 40px
+			border-bottom: 1px solid #dfdfdf
+			padding-bottom: 30px
+		.tags
+			margin-top: 30px
+		ul.social
+			margin: 30px 0 10px
+			a
+				width: 38px
+				height: 38px
+				padding: 0
+				line-height: 38px
+				text-align: center
+				margin-right: 10px
+				font-size: 0
+			li:last-child a
+				margin-right: 0
+		.title
+			font: 900 16px/1 $roboto
+			text-transform: uppercase
+			color: #131313
+			margin-bottom: 30px
+		.comment
+			.top-info
+				span.name
+					font-weight: 700
+		.article-form
+			.content-button
+				text-align: center
+				margin-bottom: 50px
+
+	section.section-text
+		padding: 100px 0 50px
+		.title
+			font: 900 16px/1 $roboto
+			text-transform: uppercase
+			margin: 0 0 30px
+		p
+			margin: 25px 0
+			font: 300 16px/1.5 $roboto
+			color: #3a3a3a
+		.item
+			margin-bottom: 25px
+			&::after
+				content: ''
+				display: table
+				clear: both
+		ul
+			margin: 30px 0
+			padding: 0
+			li
+			color: #3a3a3a
+			font: 300 16px/1.5 $roboto
+			li
+				margin-bottom: 20px
+				position: relative
+				padding-left: 16px
+				&::before
+					content: ''
+					position: absolute
+					left: 0
+					top: 10px
+					width: 6px
+					height: 6px
+					background-color: #131313
+		img
+			width: 100%
+		.text
+			padding-right: 30px
+		.side-img
+			text-align: center
+			margin-bottom: 20px
+			img
+				max-width: 360px
+
+	section.section-contact
+		.section-title
+			margin-bottom: 40px
+		form
+			color: #3a3a3a
+			*::-webkit-input-placeholder
+				color: #3a3a3a
+				opacity: 1
+			*:-moz-placeholder
+				color: #3a3a3a
+				opacity: 1
+			*::-moz-placeholder
+				color: #3a3a3a
+				opacity: 1
+			*:-ms-input-placeholder
+				color: #3a3a3a
+				opacity: 1
+			.content-button
+				text-align: center
+		
+	section.section-map
+		padding: 0
+		.container-fluid .row
+			position: relative
+			.container
+				position: absolute
+				top: 0
+				left: 50%
+				transform: translate3d(-50%, 0, 0)
+		.map
+			height: auto
+		.company-info
+			background-color: rgba(#070e37,.9)
+		ul
+			padding: 0 15px 0 55px
+		li
+			margin-bottom: 55px
+			&:last-child
+				margin-bottom: 0
+			.title
+				font: 700 16px/1 $roboto
+				color: #fff
+				text-transform: uppercase
+			a, div
+				font: 300 16px/1.5 $roboto
+				color: #fff
+			&.phone
+				background-image: url('../img/phone-icon-big-white.png')
+			&.email
+				background-image: url('../img/mail-icon-big-white.png')
+			&.address
+				background-image: url('../img/marker-icon-big-white.png')

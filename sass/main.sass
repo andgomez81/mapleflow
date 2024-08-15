@@ -1,0 +1,1829 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #fff
+	opacity: 1
+
+*:-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*::-moz-placeholder
+	color: #fff
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #fff
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $roboto
+	overflow-x: hidden
+	opacity: 1
+	height: auto
+	-webkit-backface-visibility: hidden
+
+.wrapper
+	position: relative
+	z-index: 1
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+*
+	transition: opacity .25s, color .25s
+	outline: none!important
+	&::after,&::before
+		transition: opacity .25s
+
+a, button
+	text-decoration: none
+	background-color: transparent
+	border: 0
+	color: #fff
+	position: relative
+	&:hover,&:focus
+		text-decoration: none
+		color: #fff
+	&.button
+		display: inline-block
+		padding: 20px 40px
+		min-width: 200px
+		text-transform: uppercase
+		text-align: center
+		font: 500 14px/1 $roboto
+	&.main-button
+		border: 1px solid $accent
+	&.second-button
+		background-color: black
+	&.third-button
+		background-color: $accent
+	&.fourth-button
+		background-color: $accent-benjamin
+		padding: 20px 64px 20px 10px
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			right: 0
+			background-color: $accent-benjamin-second
+			background-image: url('../img/arrow-benjamin.png')
+			background-position: center
+			background-repeat: no-repeat
+			width: 54px
+			height: 100%
+	&.fifth-button
+		background-color: $accent-benjamin-second
+		color: $accent-benjamin
+		font-weight: 700
+	&.sixth-button	
+		background-color: $accent-benjamin
+		color: #fff
+	&.seventh-button
+		border: 2px solid $accent-benjamin
+		color: $accent-benjamin
+		font-weight: 700
+		background-color: transparent
+	&.eighth-button
+		padding: 17px 27px
+		border: 1px solid #fff
+		color: #fff
+		font-weight: 700
+		background-color: transparent
+		min-width: auto
+	&.ninth-button
+		color: #fff
+		font-weight: 700
+		background-color: #3f5d7f
+	&.ortego-button
+		text-transform: none
+		font-weight: 400
+		font-size: 16px
+		padding: 21px 40px
+		min-width: 230px
+		color: #fff
+		background-color: #3f5d7f
+	&.tenth-button
+		display: block
+		color: #2d95bf
+		text-transform: uppercase
+		font: 700 14px/1 $roboto
+		padding: 23px 30px 23px
+		text-align: center
+		&.with-cross
+			padding: 23px 30px 23px 64px
+			&.active
+				span
+					&::before, &::after
+						transform: rotate(45deg)
+			span
+				width: 14px
+				height: 14px
+				position: relative
+				margin-left: 20px
+				display: inline-block
+				vertical-align: top
+				float: right
+				&::before, &::after
+					content: ''
+					position: absolute
+					border-left: 2px solid #2d95bf
+					height: 14px
+					position: absolute
+					top: 0
+					left: 6px
+				&::after
+					top: 6px
+					left: 0
+					width: 14px
+					height: 0
+					border-bottom: 2px solid #2d95bf
+
+img, video
+	max-width: 100%
+
+ul
+	list-style: none
+
+.text-center
+	text-align: center
+
+.section-title
+	font: 700 48px/1.1 $philosopher
+	letter-spacing: 1.3px
+	position: relative
+	color: #fff
+	padding-left: 100px
+	&.center-title
+		text-align: center
+		padding-left: 0
+		&::before
+			height: 60px
+			width: 0
+			border: none
+			top: -80px
+			border-left: 1px solid #fff
+			left: 50%
+	&.inversion-title
+		color: black
+		&::before
+			border-color: black
+	&::before
+		content: ''
+		position: absolute
+		top: 25px
+		left: 0
+		width: 70px
+		border-bottom: 1px solid #fff
+
+.section-breadcrumbs
+	ul
+		margin: 5px 0 0
+		padding: 0 20px
+		color: #fff
+	li
+		display: inline-block
+	a
+		font: 300 16px/1 $roboto
+		color: #fff
+		
+.submenu
+	display: none
+	transition: none!important
+
+nav
+	&.text-right
+		text-align: right
+	ul
+		padding: 0
+		margin: 0
+		font-size: 0
+	li
+		display: inline-block
+		position: relative
+	a
+		font: 500 14px $roboto
+		text-transform: uppercase
+		color: #fff
+		display: inline-block
+		vertical-align: middle
+		position: relative
+		&:hover,&.active,&:focus
+			color: $accent
+
+// Hidden navigation
+.hidden-navigation,.hidden-navigation-second
+	width: 100%
+	height: 100vh
+	overflow-y: auto
+	background-color: #101010
+	transform: translate(0, -100%)
+	transition: all .5s
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 3
+	padding: 20px
+	&.hidden-navigation
+		z-index: 3
+	&.is-open
+		transform: translate3d(0, 0, 0)
+	.top-button
+		font-size: 0
+	a.menu-close
+		width: 40px
+		height: 50px
+		display: inline-block
+		position: relative
+		z-index: 2
+		&::before,&::after
+			content: ''
+			position: absolute
+			top: 13px
+			left: 19px
+			border-left: 1px solid #fff
+			height: 25px
+			transform: rotate(45deg)
+		&::after
+			transform: rotate(-45deg)
+	.navigation-content
+		z-index: 1
+		text-align: center
+		width: 100%
+		padding: 80px 20px 40px
+		transition: all 0s
+		position: absolute
+		left: 0
+		top: 50%
+		transform: translate3d(0, -50%, 0)
+		&.fixed
+			position: static
+			transform: none
+			margin-top: -60px
+			top: auto
+		a.logo
+			display: block
+		nav
+			margin: 90px 0 100px
+			li
+				display: block
+				a
+					display: block
+					font: 500 18px/1.6 $roboto
+					margin-bottom: 15px
+					padding: 8px 10px
+			.submenu
+				a
+					color: #bababa
+					font: 300 16px/1.6 $roboto
+					text-transform: none
+	ul.social
+		padding: 0
+		font-size: 0
+		li
+			display: inline-block
+			&:last-child
+				a
+					margin-right: 0
+			a
+				display: inline-block
+				padding: 4px
+				margin-right: 7px
+	.submenu
+		display: none
+
+.hidden-navigation-second
+	max-width: 200px
+	position: fixed
+	top: 0
+	left: 0
+	height: 100vh
+	background-color: black
+	transform: none
+	padding: 0
+	font-size: 0
+	.navigation-content
+		padding: 100px 0 68px
+		&.fixed
+			transform: none
+			margin: -100px 0 -68px
+		nav
+			margin: 0
+			ul.submenu
+				border-top: 1px solid #1a1a1a
+				padding: 16px 0
+				a
+					padding: 8px 10px
+					border: 0
+				li:last-child 
+					a 
+						border: 0
+		ul:not(.submenu)
+			a
+				padding: 22px 10px
+				margin: 0
+				border-top: 1px solid #1a1a1a
+			li:last-child 
+				a 
+					border-bottom: 1px solid #1a1a1a
+	a.logo
+		background-color: #c22d2d
+		height: 100px
+		width: 100%
+		display: block
+		text-align: center
+		line-height: 100px
+		z-index: 2
+		position: relative
+		img
+			vertical-align: middle
+	ul.social
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+		text-align: center
+		padding: 22px 0
+		z-index: 2
+		background-color: black
+		&.fixed
+			position: static
+		li
+			a
+				margin-right: 5px
+
+// Page header
+header.page-header
+	background-position: center 100px
+	background-repeat: no-repeat
+	background-color: #101010
+	background-size: cover
+	position: relative
+	&:not(.second-page-header)
+		height: 100vh
+		min-height: 700px
+		.header-content
+			position: absolute
+			left: 50%
+			top: 50%
+			margin-top: 50px
+			transform: translate3d(-50%, -50%, 0)
+			z-index: 1
+			p
+				font: 300 18px/1.6 $roboto
+				color: #fff
+			.section-title
+				&.center-title::before
+					display: none
+			a.button
+				margin-top: 20px
+		.header-bottom-content
+			position: absolute
+			bottom: 60px
+			left: 50%
+			transform: translate3d(-50%, 0, 0)
+			text-align: center
+			z-index: 1
+			.text-slider
+				padding: 60px
+				max-width: 700px
+				background-color: rgba(#070e37, .9)
+				text-align: left
+				.slider-title
+					font: 900 36px/1.2 $roboto
+					text-transform: uppercase
+					color: #fff
+					padding: 25px 0 15px
+					position: relative
+					max-width: 510px
+					span.accent
+						color: $accent-benjamin-second
+					&::before
+						content: ''
+						position: absolute
+						top: 0
+						width: 40px
+						border-bottom: 2px solid #fff
+						left: 0
+				p
+					max-width: 510px
+					margin: 20px 0
+					color: #fff
+				.text-slider-nav
+					padding: 25px 0 0
+					font-size: 0
+	.header-navigation
+		height: 100px
+		background-color: $accent-fon
+		text-align: center
+		position: relative
+		width: 100%
+		z-index: 2
+		a.logo
+			height: 100px
+			display: inline-block
+			line-height: 100px
+			float: left
+		a.menu-open
+			width: 40px
+			height: 50px
+			position: absolute
+			top: 0
+			left: 50%
+			margin: -1px 0 0 -20px
+			display: none
+			span
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-left: -11px
+				border-bottom: 2px solid #fff
+				width: 22px
+				&::before,&::after
+					content: ''
+					width: 100%
+					left: 0
+					position: absolute
+					border-bottom: 2px solid #fff
+					top: -8px
+				&::after
+					top: 8px
+		nav
+			display: inline-block
+			float: right
+			a
+				line-height: 100px
+				padding: 0 16px
+				&.active
+					&::before,&::after
+						content: ''
+						position: absolute
+						top: 23px
+						left: 49%
+						border-left: 1px solid $accent
+						height: 12px
+					&::after
+						top: auto
+						bottom: 23px
+				&.search
+					width: 36px
+					height: 100px
+					background-image: url('../img/search-icon.png')
+					background-position: center right
+					background-repeat: no-repeat
+		&.header-navigation-second
+			a.logo
+				float: right
+			nav
+				float: left
+		&.header-navigation-third
+			a.menu-open
+				display: inline-block
+				height: 100px
+		&.header-navigation-fourth
+			a.logo
+				position: absolute
+				left: 50%
+				transform: translate3d(-50%, 0, 0)
+			a.menu-open
+				display: inline-block
+				float: left
+				position: relative
+				height: 100px
+				left: 15px
+				top: auto
+		&.header-navigation-fifth
+			height: 150px
+			.header-info
+				height: 50px
+				line-height: 50px
+				text-align: left
+				background-color: $accent
+				color: #fff
+				.container
+					div
+						display: inline-block
+				a
+					color: #fff
+					font: 300 14px/1 $roboto
+					display: inline-block
+				.phone,.email
+					padding-left: 27px
+					position: relative
+					display: inline-block
+					margin-right: 38px
+					&::before
+						content: ''
+						position: absolute
+						left: 0
+						background-repeat: no-repeat
+					&.phone::before
+						width: 17px
+						height: 19px
+						background-image: url('../img/phone-icon.png')
+						top: 17px
+					&.email::before
+						width: 17px
+						height: 17px
+						top: 18px
+						background-image: url('../img/mail-icon.png')
+					a
+						margin-left: 5px
+						&:first-child
+							margin-left: 0
+				ul.social
+					float: right
+					padding: 0
+					font-size: 0
+					li
+						display: inline-block
+						&:first-child
+							a
+								padding-left: 0
+						a
+							display: inline-block
+							padding: 4px
+							margin-right: 7px
+							vertical-align: middle
+	.submenu
+		text-align: left
+		background-color: #101010
+		box-shadow: 0 0 35px 0 rgba(0,0,0,.2)
+		position: absolute
+		width: 250px
+		z-index: 1
+		li
+			display: block
+			a
+				padding: 12px 40px
+				color: #bababa
+				font: 300 16px/1 $roboto
+				text-transform: none
+				display: block
+				&:hover
+					color: $accent
+					&.with-arrow
+						&::before
+							border-color: $accent
+				&.with-arrow
+					position: relative
+					&::before
+						content: ''
+						position: absolute
+						border-right: 1px solid #bababa
+						border-bottom: 1px solid #bababa
+						transform: rotate(-45deg)
+						top: 50%
+						right: 40px
+						width: 5px
+						height: 5px
+						margin-top: -2px
+	.first-submenu
+		top: 100%
+		left: -24px
+		border-top: 2px solid $accent
+		padding: 28px 0
+	.second-submenu
+		padding: 12px 0
+		left: 100%
+		top: -12px
+	.megamenu
+		position: absolute
+		top: 100%
+		left: 0
+		width: 100%
+		text-align: left
+		padding: 50px 0 40px
+		border-top: 2px solid $accent
+		z-index: 2
+		ul:last-child
+			border-right: 0
+		ul
+			margin: 0
+			padding: 0 0 8px 0
+			border-right: 1px solid #1c1c1c
+			width: 25%
+			float: left
+			vertical-align: top
+			li
+				display: block
+				&.submenu-title
+					font: 500 14px/1 $roboto
+					text-transform: uppercase
+					color: #fff
+					padding: 10px 40px
+	
+	.dot
+		height: 10px
+		width: 10px
+		margin-right: 10px
+		background-color: #fff
+		display: inline-block
+		position: relative
+		vertical-align: middle
+		cursor: pointer
+		&:last-child
+			margin-right: 0
+		&.active
+			width: 15px
+			height: 15px
+			background-color: transparent
+			border: 1px solid $accent-benjamin-second
+			&::before
+				content: ''
+				position: absolute
+				top: 3px
+				left: 3px
+				width: 7px
+				height: 7px
+				background-color: $accent-benjamin-second
+	&.page-header-image
+		.header-content
+			color: #fff
+			top: auto
+			bottom: 0
+			a
+				font: 500 14px $roboto
+				display: inline-block
+				margin-top: 2px
+				color: #fff
+				margin-top: 9px
+				text-transform: uppercase
+				position: relative
+				&:hover
+					color: $accent
+					&::after
+						border-color: $accent
+				&::after
+					content: ''
+					position: absolute
+					right: -50px
+					width: 30px
+					border-bottom: 1px solid #fff
+					transition: border-color .25s
+					top: 50%
+			.section-title
+				margin-left: -100px
+	&.page-header-slider
+		background-image: none
+		.header-content
+			text-align: center
+		.header-slider
+			position: relative
+			.owl-carousel
+				padding: 0 70px
+				.slide
+					max-width: 760px
+					margin: auto
+			.header-slider-nav
+				position: absolute
+				top: 50%
+				transform: translate3d(0, -50%, 0)
+				width: 100%
+				z-index: 1
+				div
+					width: 50px
+					height: 50px
+					background-image: url('../img/arrow-big.png')
+					background-repeat: no-repeat
+					background-position: center
+					cursor: pointer
+				.nav-prev
+					float: left
+					transform: rotate(180deg)
+				.nav-next
+					float: right
+	&.page-header-video
+		.header-content
+			text-align: center
+	.video-bg
+		video
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&.second-page-header
+		padding: 0 0 140px
+		background-image: none
+		background-color: #ae3434
+		.header-content
+			position: relative
+			z-index: 1
+		.section-title
+			margin-top: 135px
+			&::before
+				display: none
+		.section-subtitle
+			margin-top: 10px
+		&::before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			border-left: 1px solid #fff
+			height: 80px
+	.header-search
+		position: absolute
+		top: 0
+		right: 0
+		width: 100%
+		height: 100%
+		padding: 0 15px
+		background-color: #0a0a0a
+		z-index: 2
+		transition: width .25s
+		display: none
+		form
+			width: 100%
+			height: 100%
+			position: relative
+			max-width: 1140px
+			margin: auto
+			input
+				width: 100%
+				text-align: left
+				border: 0
+				background-color: transparent
+				border-bottom: 1px solid #fff
+				color: #fff
+				padding: 5px 45px 5px 10px
+				margin-top: 30px
+				font-weight: 300
+			button
+				position: absolute
+				top: 0
+				right: 0
+				width: 36px
+				height: 100%
+				background-image: url('../img/search-icon.png')
+				background-position: center right
+				background-repeat: no-repeat
+				background-color: #0a0a0a
+
+section
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	ul.items
+		padding: 0
+		li
+			padding-left: 73px
+			background-repeat: no-repeat
+			margin-bottom: 52px
+			position: relative
+			&:last-child
+				margin-bottom: 0
+			img
+				position: absolute
+				top: 0
+				left: 0
+			div
+				font: 700 18px/1 $philosopher
+				color: black
+			p
+				font: 300 16px/1.5 $roboto
+				color: #3a3a3a
+				margin: 10px 0
+		&.items-in-line
+			max-width: none
+			padding: 0
+			&::after
+				content: ''
+				display: table
+				clear: both
+			li
+				width: 25%
+				float: left
+				text-align: center
+				padding: 0 15px
+				img
+					display: block
+					position: static
+					margin: 0 auto 25px 
+
+blockquote
+	color: black
+	font: 300 italic 16px/1.5 $roboto
+	margin: 30px 0
+	padding-left: 30px
+	border-left: 2px solid $accent
+	font-style: italic
+	p
+		color: black
+		font: 300 italic 16px/1.5 $roboto!important
+
+section.section-second
+	.picture
+		background-size: cover
+		background-position: center
+	.list-items
+		background-color: #fff
+		padding-top: 95px
+		padding-bottom: 85px
+		&::after
+			content: ''
+			display: table
+			clear: both
+	ul
+		padding-left: 70px
+		max-width: 585px
+		margin: 0
+		&.items-in-line
+			margin: 5px 0 0
+			li
+				margin-bottom: 5px
+
+section.section-more-about-us
+	padding: 34px 0 100px
+	background-color: #101010
+	.container
+		position: relative
+		z-index: 1
+	.item
+		margin: 52px 0
+		.number
+			letter-spacing: 2px
+			position: relative
+			margin-bottom: 28px
+			div
+				position: absolute
+				top: 68px
+				left: 61px
+				letter-spacing: 0
+				font: 700 18px/1 $philosopher
+				color: #fff
+			span
+				font: 700 100px/1 $philosopher
+				display: inline-block
+				vertical-align: top
+				color: #fff
+				&:nth-child(2)
+					height: 54px
+					overflow: hidden
+		p
+			font: 300 16px/1.5 $roboto
+			margin: 24px 0
+			color: #bababa
+
+section.section-video
+	background-color: #fff
+	ul
+		margin: 105px 0 95px
+		padding: 0 70px 0 0
+		float: right
+		max-width: 585px
+		width: 100%
+	.progress-items
+		&::after
+			content: ''
+			display: table
+			clear: both
+	.progress-item
+		margin-bottom: 51px
+		&:last-child
+			margin-bottom: 0
+		div:not(.progress)
+			display: inline-block
+		.title
+			letter-spacing: 0.6px
+			margin-right: 15px
+		.progress
+			height: 4px
+			border-radius: 0
+			background-color: transparent
+			box-shadow: none
+			margin-top: 13px
+			.progress-bar
+				background-color: black
+	.video-item
+		overflow: hidden
+		background-color: #ba4040
+		video
+			height: 100%
+			width: 100%
+			position: absolute
+			top: 0
+			left: 0
+			object-fit: cover
+
+.video-item
+	position: relative
+	cursor: pointer
+	&.is-playing,&.no-video
+		&::before,&::after
+			display: none
+	&::before,&::after
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		z-index: 1
+	&::before
+		margin: -40px 0 0 -40px
+		width: 80px
+		height: 80px
+		background-color: rgba(0,0,0,.75)
+		border-radius: 50%
+	&::after
+		margin: -6px 0 0 -5px
+		border-left: 14px solid #fff
+		border-top: 8px solid transparent
+		border-bottom: 8px solid transparent
+
+section.section-our-services
+	padding: 90px 0 42px
+	background-color: #f4f4f4
+	ul
+		padding: 0
+		margin: 57px 0
+		&::after
+			content: ''
+			display: table
+			clear: both
+		li
+			margin-bottom: 42px
+			padding-right: 60px
+			width: 50%
+			float: left
+			&:nth-child(2n)
+				padding-left: 85px
+			img
+				background-position: 15px 0
+
+section.section-portfolio
+	&.inversion-portfolio
+		.section-header
+			background-color: #fff
+			padding: 80px 0 25px
+		.section-navigation
+			width: 100%
+			text-align: center
+			&:last-child
+				a
+					padding-right: 20px
+			a:not(.active)
+				color: black
+		.content-button
+			background-color: #fff
+	.section-header
+		padding: 90px 0 30px
+		background-color: #101010
+		.container
+			position: relative
+			z-index: 1
+	.section-title
+		display: inline-block
+		margin-bottom: 30px
+	.section-navigation
+		display: inline-block
+		float: right
+		ul
+			margin: 0
+			padding: 0
+		li
+			display: inline-block
+			&:last-child
+				a
+					padding-right: 0
+		a
+			padding: 15px 20px
+			margin-bottom: 30px
+			&.active
+				&::after
+					content: ''
+					position: absolute
+					bottom: -31px
+					height: 30px
+					border-left: 1px solid $accent
+					left: 50%
+	.content
+		.portfolio-items
+			&::after
+				content: ''
+				display: table
+				clear: both
+		&.fluid-4
+			a.portfolio-item
+				width: 25%
+				padding-top: 19.271%
+		&.fluid-3
+			a.portfolio-item
+				width: 33.333333%
+				padding-top: 26.042%
+		&.grid-4
+			.portfolio-items
+				padding: 0 1.31%
+			a.portfolio-item
+				width: 22.36%
+				padding-top: 22.36%
+				margin: 0 1.31% 2.62% 1.31%
+			.content-button
+				padding-top: 30px
+		&.grid-3
+			.portfolio-items
+				padding: 0 1.31%
+			a.portfolio-item
+				width: 30.71%
+				padding-top: 30.64%
+				margin: 0 1.31% 2.62% 1.31%
+			.content-button
+				padding-top: 30px
+		&.fluid-3, &.grid-3
+			a.portfolio-item
+				&:nth-child(2),
+				&:nth-child(4),
+				&:nth-child(5),
+				&:nth-child(7),
+				&:nth-child(10),
+				&:nth-child(12)
+					background-color: #a8a8a8
+				&:nth-child(2n)
+					background-color: #bfbfbf
+	a.portfolio-item
+		height: 0
+		position: relative
+		display: inline-block
+		background-color: #a8a8a8
+		float: left
+		background-size: cover
+		background-position: center
+		&:nth-child(2),
+		&:nth-child(4),
+		&:nth-child(5),
+		&:nth-child(7),
+		&:nth-child(10),
+		&:nth-child(12)
+			background-color: #bfbfbf
+		&::after
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(black,.15)
+			transition: background-color .25s
+		&:hover
+			&::after
+				background-color: rgba(#a30000,.75)
+			span
+				opacity: 1
+		span
+			opacity: 0
+			z-index: 1
+		span.item-content
+			text-align: center
+			position: absolute
+			top: 50%
+			left: 0
+			width: 100%
+			transform: translate3d(0, -50%, 0)
+		span.icon
+			background-image: url('../img/portfolio-icon.png')
+			background-position: center
+			background-repeat: no-repeat
+			height: 80px
+			width: 80px
+			background-color: rgba(0,0,0,.75)
+			border-radius: 50%
+			display: block
+			margin: 0 auto 10px
+		span.category-name
+			width: 100%
+			text-transform: uppercase
+			color: #fff
+			font: 500 14px/1 $roboto
+			text-align: center
+			position: absolute
+			bottom: -20px
+			left: 0
+	.content-button
+		background-color: black
+		padding: 59px 0
+
+section.section-achievements
+	padding: 194px 0 39px
+	background-color: #b73d3d
+	.container
+		position: relative
+		z-index: 1
+	.achievemts-item
+		color: #fff
+		text-align: center
+		margin-bottom: 90px
+		.number
+			font: 700 48px/1 $philosopher
+			position: relative
+			margin-bottom: 17px
+			&::before
+				content: ''
+				position: absolute
+				border-left: 1px solid #fff
+				top: -46px
+				height: 30px
+				left: 50%
+		.title
+			font: 700 18px/1 $philosopher
+		p.description
+			font: 300 16px/1.5 $roboto
+			margin: 13px 0
+			padding: 0 10px
+
+section.section-amazing-design
+	padding: 180px 0 0
+	background-color: #fff
+	p
+		text-align: center
+		margin: 23px 0
+		color: #3b3b3b
+		font: 300 16px/1.5 $roboto
+	.mockup
+		margin: 41px 0 -2px
+		font-size: 0
+		img
+			width: 100%
+			vertical-align: top
+			&:nth-child(2)
+				margin-top: -1px
+	.content-button
+		background-color: #cb2f2f
+		padding: 60px 20px
+
+section.section-first-slider
+	padding: 165px 0 25px
+	background-color: #101010
+	.container
+		position: relative
+		z-index: 1
+	.slide
+		text-align: center
+		max-width: 720px
+		margin: auto
+		padding: 0 20px
+		.img
+			width: 140px
+			height: 140px
+			background-color: #fff
+			border-radius: 50%
+			margin: auto
+			margin-bottom: 25px
+			background-position: center
+		.title
+			font: 700 18px/1 $philosopher
+			color: #fff
+		p
+			font: 300 16px/1.5 $roboto
+			color: #bababa
+			margin: 20px auto
+	.slider-nav
+		margin-top: 95px
+
+.slider-nav
+	font-size: 0
+	text-align: center
+	color: #fff
+	&.inversion-nav
+		.nav-number
+			color: black
+		.nav-arrow
+			background-image: url('../img/arrow-black.png')
+	div
+		display: inline-block
+		vertical-align: middle
+	.nav-number
+		font: 300 14px/1 $roboto
+		margin: 0 10px
+		.nav-current
+			color: $accent
+	.nav-arrow
+		width: 40px
+		height: 20px
+		background-image: url('../img/arrow.png')
+		background-repeat: no-repeat
+		background-position: center
+		cursor: pointer
+		&.nav-prev
+			transform: rotate(180deg)
+
+section.section-posts
+	padding: 90px 0 69px
+	background-color: #fff
+	.section-title
+		margin-bottom: 63px
+
+section.section-posts,
+section.section-blog
+	.posts
+		&::after
+			content: ''
+			display: table
+			clear: both
+	.posts-item
+		margin: 0 auto 30px
+		display: block
+		padding: 0 15px
+		width: 33.33333%
+		float: left
+		a
+			display: inline-block
+		> a
+			width: 100%
+		&:hover
+			.title
+				a
+					color: $accent
+		.img
+			width: 100%
+			img
+				width: 100%
+		.content
+			padding: 26px 30px 24px
+			background-color: #f4f4f4
+		.title
+			a
+				font: 700 18px/1.4 $philosopher
+				color: black
+				letter-spacing: 0.2px
+				margin-bottom: 16px
+		.subtitle
+			font: 300 14px/1 $roboto
+			color: #686868
+			span
+				display: inline-block
+				color: #686868
+			span.category
+				margin: 0 16px 5px 0
+		p
+			font: 300 16px/1.5 $roboto
+			margin-bottom: 0
+			color: #3b3b3b
+	.content-button
+		padding: 30px 20px
+
+section.section-second-slider
+	.owl-carousel
+		.owl-item
+			&:nth-child(2n)
+				.slide
+					background-color: #dfdfdf
+		.slide
+			width: 240px
+			background-color: #c1c1c1
+			height: 240px
+			&:hover
+				a
+					&::after,
+					.category-name
+						opacity: 1
+			a
+				display: inline-block
+				width: 100%
+				height: 100%
+				position: relative
+				background-color: rgba(0,0,0,.75)
+				&::after
+					content: ''
+					position: absolute
+					top: 0
+					left: 0
+					opacity: 0
+					width: 100%
+					height: 100%
+					background-color: rgba(#101010,.75)
+				.category-name
+					position: absolute
+					width: 100%
+					opacity: 0
+					text-align: center
+					top: 50%
+					left: 0
+					z-index: 1
+					transition: opacity .25s
+					transform: translate3d(0, -50%, 0)
+					color: #fff
+					font: 700 18px/1 $philosopher
+
+section.section-form
+	padding: 180px 0 100px
+	background-color: #af3535
+	.container
+		position: relative
+		z-index: 1
+	p
+		font: 300 16px/1.5 $roboto
+		color: #fff
+		text-align: center
+		margin: 24px 0
+	form
+		margin: 49px 0 0
+
+footer.page-footer
+	padding: 95px 0 0
+	background-color: #0a0a0a
+	.column-title
+		font: 500 14px $roboto
+		text-transform: uppercase
+		color: #fff
+		padding-left: 27px
+		position: relative
+		margin-bottom: 30px
+		&::before
+			content: ''
+			position: absolute
+			width: 15px
+			border-bottom: 1px solid #fff
+			top: 9px
+			left: 0
+	.column-row
+		margin-bottom: 18px
+		&::after
+			content: ''
+			display: table
+			clear: both
+		div
+			font: 300 14px/1.7 $roboto
+			color: #fff
+			&.date
+				color: #bababa
+				margin-top: 3px
+			a
+				color: #fff
+	p
+		color: #bababa
+		font: 300 14px/1.69 $roboto
+		margin: 14px 0
+	.phone,.email,.address,.twit
+		padding-left: 27px
+		position: relative
+		display: block
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 6px
+			background-repeat: no-repeat
+		&.phone::before
+			width: 17px
+			height: 19px
+			background-image: url('../img/phone-icon.png')
+		&.email::before
+			width: 17px
+			height: 17px
+			background-image: url('../img/mail-icon.png')
+		&.address::before
+			width: 15px
+			height: 20px
+			background-image: url('../img/marker-icon.png')
+		&.twit::before
+			width: 17px
+			height: 13px
+			background-image: url('../img/social-twitter.png')
+	a.news
+		display: block
+		padding-left: 65px
+		position: relative
+		div
+			overflow: hidden
+			text-overflow: ellipsis
+			display: -webkit-box
+			line-height: 23px
+			max-height: 46px
+			-webkit-line-clamp: 2
+			-webkit-box-orient: vertical
+		img
+			max-width: 45px
+			max-height: 45px
+			position: absolute
+			top: 3px
+			left: 0
+
+	a.instagram-post
+		padding: 0
+		float: left
+		width: 23.5%
+		margin: 0 2% 2% 0
+		position: relative
+		display: inline-block
+		min-height: 30px
+		background-color: #f4f4f4
+		&:nth-child(4n)
+			margin-right: 0
+		&:nth-child(4n + 1)
+			clear: both
+		img
+			width: 100%
+	.copyright
+		border-top: 1px solid #232323
+		padding: 24px 0
+		text-align: center
+		margin-top: 65px
+		color: #bababa
+		font: 300 14px/1.6 $roboto
+	&.page-footer-second,
+	&.page-footer-third,
+	&.page-footer-fourth
+		p
+			max-width: 530px
+	&.page-footer-ninth
+		text-align: center
+		padding: 94px 0
+		ul.social
+			margin-bottom: 24px
+		.copyright
+			border: 0
+			margin: 0
+			padding: 0
+	&.page-footer-tenth
+		padding: 0
+		.copyright
+			margin: 0
+
+	
+ul.social
+	padding: 0
+	font-size: 0
+	li
+		display: inline-block
+		&:first-child
+			a
+				padding-left: 0
+		&:last-child
+			a
+				padding-right: 0
+				margin-right: 0
+		a
+			display: inline-block
+			padding: 4px
+			margin-right: 7px
+			font-size: 17px
+
+form
+	&.first-form
+		input,textarea
+			font: 300 14px/1.6 $roboto
+			background-color: transparent
+			border: 0
+			width: 100%
+			border-bottom: 1px solid #fff
+			color: #fff
+			outline: none
+			padding: 6px 20px
+			max-width: 100%
+			margin-bottom: 48px
+		textarea
+			min-height: 73px
+			margin-bottom: 52px
+			resize: vertical
+		.button
+			text-align: center
+		button
+			border: 1px solid #fff
+			display: inline-block
+			padding: 19px 40px
+			min-width: 200px
+			text-transform: uppercase
+			color: #fff
+			font: 500 14px/1 $roboto
+			background-color: transparent
+	&.second-form
+		*::-webkit-input-placeholder
+			color: #686868
+			opacity: 1
+		*:-moz-placeholder
+			color: #686868
+			opacity: 1
+		*::-moz-placeholder
+			color: #686868
+			opacity: 1
+		*:-ms-input-placeholder
+			color: #686868
+			opacity: 1
+		.title
+			margin-bottom: 35px
+		input,textarea
+			color: black
+			width: 100%
+			border: 1px solid #dfdfdf
+			font: 300 14px/1 $roboto
+			padding: 12px 15px
+			margin-bottom: 30px
+			background-color: transparent
+		textarea
+			min-height: 170px
+			resize: vertical
+
+
+header.headers
+	background-color: #fff
+	height: auto!important
+	.header-navigation
+		margin-bottom: 260px
+
+.footers
+	footer
+		margin-bottom: 100px
+		&.page-footer-tenth
+			margin-bottom: 0
+
+section.section-images
+	.img
+		width: 25%
+		background-color: #e8e7e7
+		padding-top: 19.271%
+		background-size: cover
+		background-repeat: no-repeat
+		float: left
+		&:nth-child(2n)
+			background-color: #c7c7c7
+
+
+section.section-our-process
+	padding: 100px 0
+	background-color: #f4f4f4
+	.section-title
+		margin-bottom: 60px
+	.title
+		font: 700 18px/1 $philosopher
+		color: black
+	p.description
+		margin: 10px 0
+	.content-button
+		margin-top: 50px
+
+section.section-team
+	padding: 100px 0
+	.section-title
+		margin-bottom: 55px
+	.slide
+		padding: 0 15px
+		text-align: center
+		.img-bg
+			background-color: #d7d7d7
+			height: 100%
+			margin: auto
+			height: 395px
+			padding: 50px
+			max-width: 360px
+			&:hover
+				.slide-content
+					opacity: 1
+		.slide-content
+			background-color: rgba(#a30000,.75)
+			position: relative
+			height: 100%
+			opacity: 0
+			ul.social
+				position: absolute
+				top: 50%
+				left: 0
+				transform: translate3d(0, -50%, 0)
+				width: 100%
+		.title
+			font: 700 18px/1 $philosopher
+			margin-top: 30px
+			position: relative
+			&::before
+				content: ''
+				position: absolute
+				top: -45px
+				left: 50%
+				height: 30px
+				border-left: 1px solid black
+		.subtitle
+			color: #3a3a3a
+			font: 300 16px/1 $roboto
+			margin-top: 12px
+	.slider-nav
+		margin-top: 50px
+
+section.section-brands
+	background-color: #a92e2e
+	padding: 70px 0 20px
+	.container
+		position: relative
+		z-index: 1
+	.brand-item
+		text-align: center
+		margin-bottom: 50px
+
+section.section-work
+	padding: 100px 0
+	.work-left
+		.row
+			div:last-child img
+				margin-bottom: 0
+	img
+		width: 100%
+		margin-bottom: 30px
+	.title
+		font: 700 18px/1 $philosopher
+		color: black
+	p
+		font: 300 16px/1.5 $roboto
+		color: #3b3b3b
+		margin: 25px 0
+	.top
+		border-bottom: 1px solid black
+		padding-bottom: 10px
+	table
+		margin: 25px 0 0
+		td
+			padding: 15px 0
+			&:nth-child(1)
+				font: 500 14px/1 $roboto
+				text-transform: uppercase
+				padding-right: 32px
+			&:nth-child(2)
+				font: 300 16px/1 $roboto
+				color: #3b3b3b
+		a
+			color: $accent
+	.work-slider
+		position: relative
+		.slider-nav
+			position: absolute
+			top: 420px
+			z-index: 1
+			background-color: #2c2c2c
+			width: 100%
+			left: 0
+			padding: 15px
+		.slide
+			.img
+				background-color: #b1b1b1
+				height: 420px
+				background-size: cover
+				background-repeat: no-repeat
+				background-position: center
+				margin-bottom: 85px
+	.video-item, .audio-item
+		background-color: #b1b1b1
+		height: 420px
+		position: relative
+		margin-bottom: 35px
+		overflow: hidden
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+	audio
+		position: absolute
+		bottom: 0
+		left: 0
+		width: 100%
+	video
+		height: 100%
+		width: 100%
+		object-fit: cover
+
+
+article
+	padding: 100px 0
+	.post-img
+		margin-bottom: 60px
+		padding-top: 56.25%
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center
+	.title
+		font: 700 18px/1.6 $philosopher
+		margin-bottom: 7px
+	.subtitle
+		color: #686868
+		span
+			font: 300 14px/1 $roboto
+			margin-right: 20px
+	p
+		color: #3b3b3b
+		font: 300 16px/1.5 $roboto
+		margin: 30px 0
+	.article-bottom
+		margin: -20px 0 60px
+		&::after
+			content: ''
+			display: table
+			clear: both
+	.article-tags
+		color: black
+		font: 300 16px/1.4 $roboto
+		float: left
+		margin-top: 25px
+		span
+			margin-right: 15px
+		a
+			color: black
+			font: 300 italic 16px/1.4 $roboto
+	ul.social
+		padding-left: 30px
+		float: right
+		margin-top: 20px
+		a i
+			color: black
+	.article-comments
+		margin-bottom: 55px
+		.comment
+			padding-left: 130px
+			margin-bottom: 35px
+			position: relative
+		.comment-replied
+			margin-left: 100px
+		.title
+			margin-bottom: 35px
+		.avatar
+			width: 100px
+			height: 100px
+			background-color: #c8c8c8
+			border-radius: 50%
+			position: absolute
+			top: 0
+			left: 0
+		.top-info
+			line-height: 1
+			position: relative
+			padding-right: 80px
+		span.name
+			font: 500 14px/1.3 $roboto
+			margin-right: 20px
+			text-transform: uppercase
+		span.date
+			color: #686868
+			font: 300 14px/1.3 $roboto
+			margin-right: 10px
+		button
+			color: black
+			font: 300 14px/1 $roboto
+			border: 1px solid #dfdfdf
+			padding: 7px 12px
+			background-color: transparent
+			position: absolute
+			top: -6px
+			right: 0
+		p
+			margin: 25px 0
+
+section.section-contact,
+section.section-map
+	padding: 100px 0
+	.map
+		height: 500px
+		background-color: #a0a0a0
+		background-image: url('../img/map-marker.png')
+		background-repeat: no-repeat
+		background-position: center
+	ul
+		padding: 0
+		margin: 85px 0
+	li
+		display: block
+		padding-left: 65px
+		background-position: 0 0
+		background-repeat: no-repeat
+		font: 300 16px/1 $roboto
+		color: #0a0a0a
+		margin-bottom: 50px
+		&:last-child
+			margin-bottom: 0
+		a
+			font: 300 16px/1 $roboto
+			color: #0a0a0a
+			margin-bottom: 8px
+		div
+			margin-bottom: 8px
+		.title
+			font: 700 18px/1 $philosopher
+			color: black
+			margin-bottom: 18px
+		&.phone
+			background-image: url('../img/phone-icon-big.png')
+		&.email
+			background-image: url('../img/mail-icon-big.png')
+		&.address
+			background-image: url('../img/marker-icon-big.png')
+
+section.section-blog
+	padding: 100px 0
+	.content-button
+		padding: 40px 0 0
+				
+@import 'bridget-main'
+@import 'benjamin-main'
+@import 'ortego-main'
